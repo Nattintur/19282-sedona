@@ -2,14 +2,116 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: sedona</title>
+    <title>Главная страница</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
-
-    <!-- <script src="js/script.js"></script> -->
-
+      <!--Шапка, навигация-->
+      <header>
+		<div class="container">
+          <nav class="menu">
+            <ul>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Гостиницы</a></li>
+            </ul>
+              <a class="logo" href="index.html">
+                <img src="img/logo.png" alt="logo">
+              </a>
+          </nav>
+		</div>
+      </header>
+      <!--Основной контент-->
+      <main>
+	  <div class="container">
+          <!--Карточка города-->
+          <div class="card">
+            <p>Welcome</p>
+            <p>to the gorgeous</p>
+            <h1>Sedona</h1>
+            <p class="slogan">Because the Grand Canyon sucks!</p>
+          </div>
+          <div class="description">
+            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p>Рассмотри 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+            <!--Преимущества-->
+            <div class="reason">
+              <div class="reason-title">
+                <h2>Настоящий городок</h2>
+                <p>-№1-</p>
+                <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="reason-image"></div>  
+              <div class="reason-descr">
+                <div class="block">
+                    <h2>Жилье</h2>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в настоящем кино!</p>
+                </div>
+                <div class="block">
+                    <h2>Сувениры</h2>
+                    <p>Не только китайского, но и местного производства!</p>
+                </div>
+                <div class="block">
+                    <h2>Еда</h2>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="reason-title">
+                <h2>Там есть мост дьявола</h2>
+                <p>-№2-</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
+              <div class="reason-image"></div>  
+            </div>
+            <div class="reason">
+              <div class="reason-title">
+                <h2>Небольшая площадь</h2>
+                <p>-№3-</p>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="reason-title">
+                <h2>Красивая дорога</h2>
+                <p>-№4-</p>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </div>
+            <div class="reason">
+              <div class="reason-title">
+                <h2>Красивая дорога</h2>
+                <p>-№5-</p>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </div>
+          </div>
+          <!--Предложение-->
+          <div class="offer">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+            <a class="offer-btn" href="#">
+               Найти гостиницу 
+            </a>
+          </div>
+          <div class="map"></div>
+		</div>
+      </main>
+      <!--Футер-->
+      <footer>
+		<div class="container">
+          <div class="hashtag">#Visitsedona</div>
+			<div class="social-btn">
+				<a class="social-btn btn-tw" href="tw.com"></a>
+				<a class="social-btn btn-vk" href="vk.com"></a>
+				<a class="social-btn btn-yt" href="youtobe.ru"></a>
+			</div>
+          <div class="copyright">Разработано</div>
+		</div>
+      </footer>
+      <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
