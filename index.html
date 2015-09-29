@@ -1,117 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+   <head>
     <meta charset="utf-8">
     <title>Главная страница</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
       <!--Шапка, навигация-->
-      <header>
-		<div class="container">
-          <nav class="menu">
-            <ul>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Гостиницы</a></li>
-            </ul>
-              <a class="logo" href="index.html">
+      <header class="page-header">
+		<div class="page-header__nav-wrap">
+			<nav class="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a href="#">Карта штата</a></li>
+					<li class="navigation__item"><a href="#">Информация</a></li>
+					<li class="navigation__item"><a href="#">Фото и видео</a></li>
+					<li class="navigation__item"><a href="#">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!--Логотип-->
+		<div class="page-header__logo-wrap">
+            <a class="logo-link" href="index.html">
                 <img src="img/logo.png" alt="logo">
-              </a>
-          </nav>
+            </a>
 		</div>
       </header>
+	  
       <!--Основной контент-->
       <main>
-	  <div class="container">
-          <!--Карточка города-->
-          <div class="card">
-            <p>Welcome</p>
-            <p>to the gorgeous</p>
-            <h1>Sedona</h1>
-            <p class="slogan">Because the Grand Canyon sucks!</p>
+		<!--Карточка города-->
+		<div class="card">
+          <div class="card__wrap">
+            <img class="card__greeting" src="img/card__greeting.png" alt="greeting"></img>
+            <img class="card__main-logo" src="img/card__main-logo.png" alt="main-logo">Sedona</img>
+            <img class="card__slogan" src="img/card__slogan" alt="slogan">Because the Grand Canyon sucks!</img>
           </div>
-          <div class="description">
-            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p>Рассмотри 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-            <!--Преимущества-->
+		</div>
+		
+		<!--Описание-->
+        <div class="descr">
+			<div class="descr__wrap">
+				<h1 class="descr__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p class="descr__text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+			</div>
+            <!--Причины-->
+			<!--1 Причина-->
             <div class="reason">
-              <div class="reason-title">
-                <h2>Настоящий городок</h2>
-                <p>-№1-</p>
-                <p>Седона не атракцион для туристов, там течет своя жизнь</p>
-              </div>
-              <div class="reason-image"></div>  
-              <div class="reason-descr">
-                <div class="block">
-                    <h2>Жилье</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, все как в настоящем кино!</p>
-                </div>
-                <div class="block">
-                    <h2>Сувениры</h2>
-                    <p>Не только китайского, но и местного производства!</p>
-                </div>
-                <div class="block">
-                    <h2>Еда</h2>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </div>
-              </div>
-            </div>
-            <div class="reason">
-              <div class="reason-title">
-                <h2>Там есть мост дьявола</h2>
-                <p>-№2-</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
-              <div class="reason-image"></div>  
-            </div>
-            <div class="reason">
-              <div class="reason-title">
-                <h2>Небольшая площадь</h2>
-                <p>-№3-</p>
-                <p>Все достопримечательности находятся очень близко</p>
-              </div>
-            </div>
-            <div class="reason">
-              <div class="reason-title">
-                <h2>Красивая дорога</h2>
-                <p>-№4-</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
-            </div>
-            <div class="reason">
-              <div class="reason-title">
-                <h2>Красивая дорога</h2>
-                <p>-№5-</p>
-                <p>Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
-            </div>
-          </div>
-          <!--Предложение-->
-          <div class="offer">
-            <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-            <a class="offer-btn" href="#">
+				<div class="reason__item">
+					<!--Заголовок 1 причины-->
+					<div class="reason__header">
+						<h2 class="reason__title">Настоящий городок</h2>
+						<p class="reason__number">-№1-</p>
+						<p class="reason__descr-title">Седона не атракцион для туристов, там течет своя жизнь</p>
+					</div>
+					<!--Картинка 1 причины-->
+					<div class="reason__image">
+						<img></img>
+					</div>
+				</div>
+				<!--Описание причины 1-->
+				<div class="reason__descr">
+					<section class="reason__advantage">
+						<h2 class="reason__advantage-title">Жилье</h2>
+						<p>Рекомендуем пожить в настоящем мотеле, все как в настоящем кино!</p>
+					</section>
+				</div>
+				<div class="reason__descr">
+					<section class="reason__advantage">
+						<h2 class="reason__advantage-title">Сувениры</h2>
+						<p>Не только китайского, но и местного производства!</p>
+					</section>
+				</div>
+				<div class="reason__descr">
+					<section class="reason__advantage">
+						<h2 class="reason__advantage-title">Еда</h2>
+						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</section>
+				</div>
+			</div>
+			<!--2 Причина-->
+			<div class="reason">
+				<div class="reason__item">
+					<!--Заголовок 2 причины-->
+					<div class="reason__header">
+						<h2 class="reason__title">Там есть мост дьявол</h2>
+						<p class="reason__number">-№2-</p>
+						<p class="reason__descr-title">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+					<!--Картинка 1 причины-->
+					<div class="reason__image">
+						<img></img>
+					</div>
+				</div>
+			</div>
+			<!--3 Причина-->
+			<div class="reason">
+				<div class="reason__item">
+					<!--Заголовок 3 причины-->
+					<div class="reason__header">
+						<h2 class="reason__title">Небольшая площадь</h2>
+						<p class="reason__number">-№3-</p>
+						<p class="reason__descr-title">Все достопримечательности находятся очень близко</p>
+					</div>
+				</div>
+			</div>
+			<!--4 Причина-->
+			<div class="reason">
+				<div class="reason__item">
+					<!--Заголовок 4 причины-->
+					<div class="reason__header">
+						<h2 class="reason__title">Красивая дорога</h2>
+						<p class="reason__number">-№4-</p>
+						<p class="reason__descr-title">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</div>
+				</div>
+			</div>
+			<!--5 Причина-->
+			<div class="reason">
+				<div class="reason__item">
+					<!--Заголовок 5 причины-->
+					<div class="reason__header">
+						<h2 class="reason__title">Красивая дорога</h2>
+						<p class="reason__number">-№5-</p>
+						<p class="reason__descr-title">Большинство едет в Гранд Каньон и толпится там</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <!--Предложение-->
+        <section class="offer">	
+            <h2 class="offer__title">Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="offer__btn" href="#">
                Найти гостиницу 
             </a>
-          </div>
-          <div class="map"></div>
+        </section>
+		
+		<!--Карта-->
+        <div class="map">
+				<div class="map__item"></div>
 		</div>
       </main>
+	  
       <!--Футер-->
-      <footer>
-		<div class="container">
-          <div class="hashtag">#Visitsedona</div>
-			<div class="social-btn">
-				<a class="social-btn btn-tw" href="tw.com"></a>
-				<a class="social-btn btn-vk" href="vk.com"></a>
-				<a class="social-btn btn-yt" href="youtobe.ru"></a>
+      <footer class="page-footer">
+		<div class="page-footer__wrap">
+			<div class="hashtag-link">
+				<a class="hashtag-link__visit" href="">#Visitsedona</a>
 			</div>
-          <div class="copyright">Разработано</div>
+			<div class="social-links">
+				<a class="social-links__tw" href="tw.com"></a>
+				<a class="social-links__vk" href="vk.com"></a>
+				<a class="social-links__youtobe" href="youtobe.ru"></a>
+			</div>
+			<div class="copyright-link">
+				<a class="copyright-link__dev" href="/">Разработано</a>
+			</div>
 		</div>
       </footer>
       <!-- <script src="js/script.js"></script> -->
-  </body>
-</html>
+   </body>
+ </html>
