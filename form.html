@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: sedona</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
+</head>
   <body>
- <!--Шапка, навигация-->
-      <header class="page-header">
-		<div class="page-header__nav-wrap">
+ 	<!--Шапка, навигация-->
+    <header class="page-header">
+		<div class="page-header__wrap">
 			<nav class="navigation">
 				<ul class="navigation__list">
 					<li class="navigation__item"><a href="#">Карта штата</a></li>
@@ -17,147 +17,154 @@
 					<li class="navigation__item"><a href="#">Гостиницы</a></li>
 				</ul>
 			</nav>
-		</div>
-			
-		<!--Логотип-->
-		<div class="page-header__logo-wrap">
-            <a class="logo-link" href="index.html">
-                <img src="img/logo.png" alt="logo">
-            </a>
-		</div>
-      </header>
-	  <!--Основной контент-->
-	  <main>
-		<div class="card">
-          <div class="card__wrap">
-            <img class="card__main-logo" src="img/card__main-logo.png" alt="main-logo">Sedona</img>
-          </div>
-		</div>
-		
-		<!--Заголовок главной страницы формы-->
-		<div class="main-page-header">
-			<div class="main-page-header__wrap">
-				<h1 class="main-page-header__title">Оставьте свой отзыв</h1>
-				<p class="main-page-header__descr">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+			<!--Логотип-->
+			<div class="logo">
+            	<a class="logo__link" href="index.html">
+                	<img src="img/logo.png" alt="logo">
+            	</a>
 			</div>
 		</div>
+    </header>
+	  <!--Основной контент-->
+	<main>
+		<div class="main__wrap">
+			<div class="card">
+          		<div class="card__wrap">
+            		<img class="card__main-logo" src="img/card__main-logo.png" alt="Sedona"></img>
+          		</div>
+			</div>
+		
+			<!--Заголовок главной страницы формы-->
+			<div class="main-page-header">
+				<div class="main-page-header__wrap">
+					<h1 class="main-page-header__title">Оставьте свой отзыв</h1>
+					<p class="main-page-header__descr">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+				</div>
+			</div>
 	  
-		<!--Форма отзыва-->
-		<div class="form-review">
-			<div class="form-review__wrap">
-				<h2 class="form-review__title">Представьтесь, пожалуйста:</h2>
-				<form action="/echo" method="post">
-					<!--ФИО путешественника-->
-					<div class="person-data">
-						<label for="last-name">Фамилия:</label>
-						<input type="text" id="last-name" name="last-name" value="Иванов"></input>
-						<label for="first-name">Имя:</label>
-						<input type="text" id="first-name" name="first-name" value="Пётр"></input>
-						<label for="patronymic">Отчество:</label>
-						<input type="text" id="patronymic" name="patronymic" value="Александрович"></input>
-					</div>
-					<!--Впечатление-->
-					<div class="impression">
-						<h2 class="impression__title">Ваше общее впечатление:</h2>
-						<ul class="impression__list">
-							<li><input type="radio">Скорее положительное</input></li>
-							<li><input type="radio">Скорее отриательное</input></li>
-						</ul>
-					</div>
-					<!--Информация о путешествии-->
-					<div class="info-travel">
-						<h2 class="info-tarvel__title">Даты вашей поездки:</h2>
-						<label for="date-start">Дата приезда:</label>
-						<input type="date" id="date-start" name="date-start" value="4 июля 2015"></input>
-						<div class="quantity">
-							<label for="quantity-day">Длительность пребывания:</label>
-							<input class="quantity__button quantity_button--left" type="button" value="-"></input>
-							<input type="number" id="quantity-day" value="14">дн.</input>
-							<input class="quantity__button quantity_button--right" type="button" value="+"></input>
+			<!--Форма отзыва-->
+			<div class="form-review">
+				<div class="form-review__wrap">
+					<h2 class="form-review__title">Представьтесь, пожалуйста:</h2>
+					<form action="/echo" method="post" enctype="multipart/form-data">
+						<!--ФИО путешественника-->
+						<div class="person-data">
+							<label for="last-name">Фамилия:</label>
+							<input type="text" id="last-name" name="last-name" value="Иванов"></input>
+							<label for="first-name">Имя:</label>
+							<input type="text" id="first-name" name="first-name" value="Пётр"></input>
+							<label for="patronymic">Отчество:</label>
+							<input type="text" id="patronymic" name="patronymic" value="Александрович"></input>
 						</div>
+						<!--Впечатление-->
+						<div class="impression">
+							<h2 class="impression__title">Ваше общее впечатление:</h2>
+							<ul class="impression__list">
+								<li><input type="radio">Скорее положительное</input></li>
+								<li><input type="radio">Скорее отрицательное</input></li>
+							</ul>
+						</div>
+						<!--Информация о путешествии-->
+						<div class="info-travel">
+							<h2 class="info-tarvel__title">Даты вашей поездки:</h2>
+							<label for="date-start">Дата приезда:</label>
+							<input type="date" id="date-start" name="date-start" value="4 июля 2015"></input>
+							<div class="quantity">
+								<label for="quantity-day">Длительность пребывания:</label>
+								<input class="quantity__button quantity_button--left" type="button" value="-"></input>
+								<input type="number" id="quantity-day" value="14">дн.</input>
+								<input class="quantity__button quantity_button--right" type="button" value="+"></input>
+							</div>
 							<label for="date-end">Дата отъезда:</label>
 							<input type="date" id="date-end" name="date-end" value="28 июля 2015"></input>
-					</div>
-					<!--Кол-во путешественников-->
-					<div class="number-person">
-						<h2 class="number-person__title">Кол-во путешественников:</h2>
-						<div class="quantity">
-							<label for="number-person">Количество путешественников</label>
-							<input class="quantity__button quantity_button--left" type="button" value="-"></input>
-							<input type="number" id="number-person" value="2">чел.</input>
-							<input class="quantity__button quantity_button--right" type="button" value="+"></input>
 						</div>
-					</div>
-					<!--Информация о всех путешествующих-->
-					<div class="data-travel">
-						<div class="data-travel__item-person">
-							<div class="data-travel__number">
-								<label for="number-travel">№</label>
-								<input type="text" id="number-travel" name="number" value="1"></input>
-							</div>
-							<div class="data-travel__person">
-								<label for="last-name__person1">Фамилия:</label>
-								<input type="text" id="last-name__person1" name="last-name" value="Иванов"></input>
-								<label for="first-name__person1">Имя:</label>
-								<input type="text" id="first-name__person1" name="first-name" value="Пётр"></input>
-								<label for="patronymic__person1">Отчество:</label>
-								<input type="text" id="patronymic__person1" name="patronymic" value="Александрович"></input>
+						<!--Кол-во путешественников-->
+						<div class="number-person">
+							<h2 class="number-person__title">Кол-во путешественников:</h2>
+							<div class="quantity">
+								<label for="number-person">Количество путешественников</label>
+								<input class="quantity__button quantity_button--left" type="button" value="-"></input>
+								<input type="number" id="number-person" value="2">чел.</input>
+								<input class="quantity__button quantity_button--right" type="button" value="+"></input>
 							</div>
 						</div>
-						<div class="data-travel__item-person">
-							<div class="data-travel__number">
-								<label for="number-travel">№</label>
-								<input type="text" id="number-travel" name="number" value="2"></input>
+						<!--Информация о всех путешествующих-->
+						<div class="data-travel">
+							<div class="data-travel__item-person">
+								<div class="data-travel__number">
+									<label for="number-travel">№</label>
+									<input type="text" id="number-travel" name="number" value="1"></input>
+								</div>
+								<div class="data-travel__person">
+									<label for="last-name__person1">Фамилия:</label>
+									<input type="text" id="last-name__person1" name="last-name" value="Иванов"></input>
+									<label for="first-name__person1">Имя:</label>
+									<input type="text" id="first-name__person1" name="first-name" value="Пётр"></input>
+									<label for="patronymic__person1">Отчество:</label>
+									<input type="text" id="patronymic__person1" name="patronymic" value="Александрович"></input>
+								</div>
 							</div>
-							<div class="data-travel__person">
-								<label for="last-name__person2">Фамилия:</label>
-								<input type="text" id="last-name__person2" name="last-name" value="Иванов"></input>
-								<label for="first-name__person2">Имя:</label>
-								<input type="text" id="first-name__person2" name="first-name" value="Пётр"></input>
-								<label for="patronymic__person2">Отчество:</label>
-								<input type="text" id="patronymic__person2" name="patronymic" value="Александрович"></input>
+							<div class="data-travel__item-person">
+								<div class="data-travel__number">
+									<label for="number-travel">№</label>
+									<input type="text" id="number-travel" name="number" value="2"></input>
+								</div>
+								<div class="data-travel__person">
+									<label for="last-name__person2">Фамилия:</label>
+									<input type="text" id="last-name__person2" name="last-name" value="Иванов"></input>
+									<label for="first-name__person2">Имя:</label>
+									<input type="text" id="first-name__person2" name="first-name" value="Пётр"></input>
+									<label for="patronymic__person2">Отчество:</label>
+									<input type="text" id="patronymic__person2" name="patronymic" value="Александрович"></input>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!--Достопримечательности-->
-					<div class="attraction">
-						<ul class="attraction__list">
-							<li class="attraction__item"><input type="checkbox">Мост Дьявола</input></li>
-							<li class="attraction__item"><input type="checkbox">Слайд-парк</input></li>
-							<li class="attraction__item"><input type="checkbox">Гора-Колокол</input></li>
-							<li class="attraction__item"><input type="checkbox">Красные скалы</input></li>
-						</ul>
-					</div>
+						<!--Достопримечательности-->
+						<div class="attraction">
+							<ul class="attraction__list">
+								<li class="attraction__item"><input type="checkbox">Мост Дьявола</input></li>
+								<li class="attraction__item"><input type="checkbox">Слайд-парк</input></li>
+								<li class="attraction__item"><input type="checkbox">Гора-Колокол</input></li>
+								<li class="attraction__item"><input type="checkbox">Красные скалы</input></li>
+							</ul>
+						</div>
 				
-					<!--Загрузка фото-->
-					<div class="images">
-						<div class="images__item"><img src="img/image1.png"></img></div>
-						<div class="images__item"><img src="img/image2.png"></img></div>
-						<div class="images__item"><img src="img/image3.png"></img></div>
-						<div class="images__item"><img src="img/image4.png"></img></div>
-						<div class="images__item"><img src="img/image5.png"></img></div>
-						<div class="images__item"><img src="img/image6.png"></img></div>
-						<div class="images__item"><img src="img/image7.png"></img></div>
-						<input type="submit"></input>
-					</div>
-				</form>
+						<!--Загрузка фото-->
+						<div class="images">
+							<h2>Загрузите фотографии:</h2>
+							<label for="file">
+							<input type="file" name="img" accept="image/*" value="Выбрать фотографии"></input>
+							</label>
+							<div class="images__item"><img src="img/image1.png"></img></div>
+							<div class="images__item"><img src="img/image2.png"></img></div>
+							<div class="images__item"><img src="img/image3.png"></img></div>
+							<div class="images__item"><img src="img/image4.png"></img></div>
+							<div class="images__item"><img src="img/image5.png"></img></div>
+							<div class="images__item"><img src="img/image6.png"></img></div>
+							<div class="images__item"><img src="img/image7.png"></img></div>
+							<input type="submit" value="Отправить отзыв"></input>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	  </main>
-	  <footer class="page-footer">
+	</main>
+
+	<!--Футер-->
+    <footer class="page-footer">
 		<div class="page-footer__wrap">
-			<div class="hashtag-link">
-				<a class="hashtag-link__visit" href="/">#Visitsedona</a>
+			<div class="page-footer__item">
+				<a class="page-footer__link-hashtag" href="/">#Visitsedona</a>
 			</div>
 			<div class="social-links">
 				<a class="social-links__tw" href="tw.com"></a>
 				<a class="social-links__vk" href="vk.com"></a>
 				<a class="social-links__youtobe" href="youtobe.ru"></a>
 			</div>
-			<div class="copyright-link">
-				<a class="copyright-link__dev" href="/">Разработано</a>
+			<div class="page-footer__item">
+				<a class="page-footer__link-copyright" href="/">Разработано</a>
 			</div>
 		</div>
-      </footer>
+    </footer>
     <!-- <script src="js/script.js"></script> -->
 </html>
