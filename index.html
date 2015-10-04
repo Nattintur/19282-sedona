@@ -11,10 +11,10 @@
 		<div class="page-header__wrap">
 			<nav class="navigation">
 				<ul class="navigation__list">
-					<li class="navigation__item"><a href="#">Карта штата</a></li>
-					<li class="navigation__item"><a href="#">Информация</a></li>
-					<li class="navigation__item"><a href="#">Фото и видео</a></li>
-					<li class="navigation__item"><a href="#">Гостиницы</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
+					<li class="navigation__item"><a class="navigation__link" href="#">Гостиницы</a></li>
 				</ul>
 			</nav>
 			<!--Логотип-->
@@ -47,20 +47,20 @@
 			</div>
             	<!--Причины-->
 				<!--1 Причина-->
-            	<div class="reasons">
-					<div class="reason">
+            	<div class="reason">
+                    <div class="reason__wrap">
 						<!--Заголовок 1 причины-->
 						<div class="reason__header">
 							<h2 class="reason__title">Настоящий городок</h2>
 							<p class="reason__number">-№1-</p>
 							<p class="reason__descr-title">Седона не атракцион для туристов, там течет своя жизнь</p>
 						</div>
+                    </div>
 						<!--Картинка 1 причины-->
 						<div class="reason__image">
-							<img></img>
+							<img src="img/reason1.jpg"></img>
 						</div>
-					</div>
-				</div>
+                </div>
 
 				<!--Описание причины 1-->
 				<div class="advantages">
@@ -81,62 +81,56 @@
 				</div>
 
 				<!--2 Причина-->
-				<div class="reasons">
-					<div class="reason">
+				<div class="reason">
+                    <div class="reason__wrap">
 						<!--Заголовок 2 причины-->
 						<div class="reason__header">
 							<h2 class="reason__title">Там есть мост дьявол</h2>
 							<p class="reason__number">-№2-</p>
 							<p class="reason__descr-title">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</div>
-						<!--Картинка 1 причины-->
+                    </div>
+						<!--Картинка 2 причины-->
 						<div class="reason__image">
-							<img></img>
-						</div>
-					</div>
+							<img src="img/reason2.jpg"></img>
+						</div>  
 				</div>
 
 				<!--3,4,5 Причины-->
-				<div class="reasons-container">
-					<div class="reasons">
-						<div class="reason__item">
+				<div class="reasons">
+                    <div class="reasons__wrap">
+				    	<div class="reasons__item">
 							<!--Заголовок 3 причины-->
-							<div class="reason__header">
-								<h2 class="reason__title">Небольшая площадь</h2>
-								<p class="reason__number">-№3-</p>
-								<p class="reason__descr-title">Все достопримечательности находятся очень близко</p>
+							<div class="reasons__header">
+								<h2 class="reasons__title">Небольшая площадь</h2>
+								<p class="reasons__number">-№3-</p>
+								<p class="reasons__descr-title">Все достопримечательности находятся очень близко</p>
 							</div>
-						</div>
-					</div>
-					
-					<div class="reasons">
-						<div class="reason__item">
-							<div class="reason__header">
-								<h2 class="reason__title">Красивая дорога</h2>
-								<p class="reason__number">-№4-</p>
-								<p class="reason__descr-title">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				    	</div>
+				    	<div class="reasons__item">
+							<div class="reasons__header">
+								<h2 class="reasons__title">Красивая дорога</h2>
+								<p class="reasons__number">-№4-</p>
+								<p class="reasons__descr-title">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 							</div>
-						</div>
-					</div>
-
-					<div class="reasons">
-						<div class="reason__item">
-							<div class="reason__header">
-								<h2 class="reason__title">Красивая дорога</h2>
-								<p class="reason__number">-№5-</p>
-								<p class="reason__descr-title">Большинство едет в Гранд Каньон и толпится там</p>
+				    	</div>
+				    	<div class="reasons__item">
+							<div class="reasons__header">
+								<h2 class="reasons__title">Красивая дорога</h2>
+								<p class="reasons__number">-№5-</p>
+								<p class="reasons__descr-title">Большинство едет в Гранд Каньон и толпится там</p>
 							</div>
-						</div>
-					</div>
+				    	</div>
+                    </div>
 				</div>
 		
         	<!--Предложение-->
         	<section class="offer">	
-            	<h2 class="offer__title">Заинтересовались?</h2>
-            	<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            	<a class="offer__btn" href="#">
-               	Найти гостиницу 
-            	</a>
+                <div class="offer__wrap">
+            		<h2 class="offer__title">Заинтересовались?</h2>
+            		<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            		<a class="offer__btn" href="#">Найти гостиницу</a>
+                </div>
         	</section>
 		
 			<!--Карта-->
