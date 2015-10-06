@@ -1,52 +1,49 @@
 .page-footer{
     background:@main-background;
     position: relative;
+    text-align: center;
     &__wrap{
-        padding: 35px 80px;
+        padding: 35px 20px;
     }
     &__item{
         text-align: center;
     }
     &__link-hashtag{
         font-size: 21px;
-        color:@color-main-text;
-        text-transform: uppercase;
-        line-height: 1.857;
+        line-height: 26px;
+        color:@color-link;
     }
     &__link-copyright{
         font-size: 14px;
+        line-height: 26px;
         font-family: "PTSansRegular";
-        color:@color-main-text;
-        text-transform: uppercase;
-        line-height: 1.857;
-        
+        color:@color-link;
+        &:after{
+            content:'';
+            width:45px;
+            height:45px;
+            display:inline-block;
+            vertical-align:middle;
+            background:url('../img/sprites.png') -151px -48px no-repeat;    
+        }
     }
-}
-.page-footer__item img{
-        width:45px;
-        height:45px;
-        background:#ffffff url('../img/sprites.png') -151px -48px no-repeat;
 }
 .social-links{
     padding: 40px 0px;
-    a{
+    &__item{
+        width:45px;
+        height:45px;
         text-align: center;
         display:inline-block;
         margin-left:5px;
-    }
-    &__tw{
-        width:45px;
-        height:45px;
-        background:@color url('../img/sprites.png') 5px -48px no-repeat ;
-    }
-     &__fb{
-        width:45px;
-        height:45px;
-        background:@color url('../img/sprites.png') -50px -48px no-repeat ;
-    }
-     &__youtube{
-        width:45px;
-        height:45px;
-        background:@color url('../img/sprites.png') -103px -48px no-repeat ;
-    }
+         &--tw{
+            background:@blue-color url('../img/sprites.png') 5px -48px no-repeat ;
+        }
+        &--fb{
+            background:@blue-color url('../img/sprites.png') -50px -48px no-repeat ;
+        }
+        &--youtube{
+            background:@blue-color url('../img/sprites.png') -103px -48px no-repeat ;
+        }
+    }  
 }
