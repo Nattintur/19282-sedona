@@ -1,0 +1,187 @@
+.container{
+    width: @width-mobile-content;
+    background:@main-background;
+    margin: 0 auto;
+}
+.main__wrap{
+    
+}
+
+.card{ 
+    background:url('../img/background_for_main.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 46px 0px;
+    position:relative;
+    &__greeting{
+        display:inline-block;
+        margin:0 auto;
+        margin-bottom:60px;
+    }
+    &__main-logo{
+        display:inline-block;
+        margin:0 auto;
+        margin-bottom:65px;
+    }
+    &__slogan{
+        display:inline-block;
+        margin:0 auto;
+    }
+    &:before{
+        content:'';
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        border-top:24px solid transparent;
+        border-left:160px solid @main-background;
+        z-index: 1;
+    }
+    &:after{
+        content:'';
+        position:absolute;
+        bottom:0px;
+        right: 0px;
+        border-top:24px solid transparent;
+        border-right:160px solid @main-background;
+        z-index: 1;
+    }
+}
+
+.description{
+    position: relative;
+    padding-top: 22px;
+    padding-bottom: 34px;
+    text-align: center;
+    &__wrap{
+        padding:0 28px;
+    }
+    &__title{
+        width: 264px;
+        margin-bottom: 25px;    
+    }
+    &:before{
+        content:'';
+        position:absolute;
+        border-top:24px solid transparent;
+        border-left:160px solid @blue-color;
+        left:0px;
+        bottom: 0px;
+        z-index: 1;    
+    }
+    &:after{
+        content:'';
+        position:absolute;
+        border-top:24px solid transparent;
+        border-right:160px solid @blue-color;
+        right:0px;
+        bottom: 0px;
+        z-index: 1;
+    }
+}
+.reason{
+    background: @blue-color;
+    text-align: center;
+    &__wrap{
+        padding: 0px 20px;
+    }
+    &__header{
+       padding:27px 0px; 
+    }
+    &__title{
+        color:@color-text;
+    }
+    &__number{
+        color:@color-text;
+    }
+    &__descr-title{
+        color:@color-text;
+    }
+    &__image{
+        width: 100%;
+        min-height: 256px;
+    }
+}
+
+.advantages{
+    &__wrap{
+        padding: 0px 20px;
+        padding-top: 15px;
+        position: relative;
+    }
+    &__description{
+        margin-top:10px;
+        &:first-of-type{
+            margin-top:25px;
+        }
+        &:last-of-type{
+            margin-bottom: 25px;
+        }
+    }
+    &__image{
+        width:40px;
+        height: 50px;
+        display:inline-block;
+        vertical-align: top;
+    }
+    &__title{
+        text-align:left;
+        display: inline-block;
+        width: 230px;
+        
+    }
+}
+.advantages__description:nth-of-type(1) .advantages__image{
+    background: url('../img/sprites.png') -104px 5px no-repeat ;
+    }
+.advantages__description:nth-of-type(2) .advantages__image{
+    background: url('../img/sprites.png') -154px 5px no-repeat ; 
+}
+.advantages__description:nth-of-type(3) .advantages__image{
+        background: url('../img/sprites.png') -205px 5px no-repeat ;
+}
+
+.reasons{
+    background:@color-reasons;
+    text-align: center;
+    &__wrap{
+        padding:0px 20px;
+    }
+    &__item{
+        padding: 15px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    &__item:last-of-type{
+        border-bottom: none;
+    }
+}
+
+.offer{
+    &__wrap{
+        padding:0px 20px 45px 20px;
+        text-align: center;
+    }
+    &__title{
+        font-size: 21px;
+        margin-top:30px;
+        margin-bottom: 10px;
+    }
+    &__text{
+        font-size:14px;
+        line-height: 24px;
+    }
+    &__btn{
+        font-size: 21px;
+        color:@color-text;
+        margin-top:40px;
+        display:block;
+        background: @blue-color;
+        padding:20px 10px;
+        text-align: center;
+    }
+}
+
+.map{
+    width: 320px;
+    height: 350px;
+    background: url('https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=320&height=350&lang=ru_RU&sourceType=constructor') no-repeat;
+}
