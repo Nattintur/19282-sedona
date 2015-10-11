@@ -3,29 +3,24 @@
     background:@main-background;
     margin: 0 auto;
 }
-.main__wrap{
-    
-}
+.main__wrap{}
 
 .card{ 
-    background:url('../img/background_for_main.jpg') no-repeat;
+    background:url('../img/background_for_main.jpg') 100% no-repeat;
     background-size: cover;
     text-align: center;
     padding: 46px 0px;
     position:relative;
     &__greeting{
         display:inline-block;
-        margin:0 auto;
         margin-bottom:60px;
     }
     &__main-logo{
         display:inline-block;
-        margin:0 auto;
-        margin-bottom:65px;
     }
     &__slogan{
+        margin-top:65px;
         display:inline-block;
-        margin:0 auto;
     }
     &:before{
         content:'';
@@ -86,30 +81,23 @@
     }
     &__header{
        padding:27px 0px; 
-    }
-    &__title{
-        color:@color-text;
-    }
-    &__number{
-        color:@color-text;
-    }
-    &__descr-title{
-        color:@color-text;
+       color:@color-text;
     }
     &__image{
-        width: 100%;
         min-height: 256px;
+        img{
+            width:100%;
+        }
     }
 }
 
 .advantages{
     &__wrap{
         padding: 0px 20px;
-        padding-top: 15px;
+        padding-top: 30px;
         position: relative;
     }
     &__description{
-        margin-top:10px;
         &:first-of-type{
             margin-top:25px;
         }
@@ -140,7 +128,7 @@
         background: url('../img/sprites.png') -205px 5px no-repeat ;
 }
 
-.reasons{
+.features{
     background:@color-reasons;
     text-align: center;
     &__wrap{
@@ -159,10 +147,10 @@
     &__wrap{
         padding:0px 20px 45px 20px;
         text-align: center;
+        margin-top:30px;
     }
     &__title{
         font-size: 21px;
-        margin-top:30px;
         margin-bottom: 10px;
     }
     &__text{
