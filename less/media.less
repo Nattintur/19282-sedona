@@ -4,22 +4,30 @@
 	}
 	.navigation{
 		background:@main-background;
-		padding:0 30px;
+		padding:0 3.9%;
 		&__list{
 			display:flex;
 			justify-content:space-between;
 		}
 		&__item{
+			width:20%;
+			display:block;
 			background:@main-background;
 			box-shadow:none;
 				-webkit-box-shadow: none;
                 -moz-box-shadow:none;
 		}
 		&__item:nth-of-type(1){
-			order:4;
+			order:3;
+		}
+		&__item:nth-of-type(2){
+			order:1;
 		}
 		&__item:nth-of-type(3){
-			margin-left:-10px;
+			order:2;
+		}
+		&__item:nth-of-type(4){
+			order:4;
 		}
 		&__link{
 			.font-text();
@@ -46,7 +54,7 @@
 		&__slogan{
 			display:block;
 			margin:0 auto;
-			margin-top:65px;
+			margin-top:8.4%;
 		}
 	}
 	.description{
@@ -59,14 +67,18 @@
 		}
 	}
 	.reason{
+		display:flex;
 		&__wrap{
 			display:block;
 			padding:0px;
 			width:33%;
-			float:left;
+			/*float:left;*/
+			&--change{
+				order:1;
+			}
 		}
 		&__header{
-			padding:25px 30px 30px 30px;
+			padding:25px 45px 30px 45px;
 		}
 		&__title{
 			font-size:21px;
@@ -77,13 +89,7 @@
 		&__image{
 			display:block;
 			width:67%;
-			float:right;
-		}
-		&::before,
-		&::after{
-			content:'';
-			display:table;
-			clear:both;
+			/*float:right;*/
 		}
 	}
 
@@ -114,16 +120,25 @@
 		}
 	}
 	.features{
+		text-align:none;
 		&__wrap{
 			padding:0px;
 			display:flex;
-			justify-content: space-between;
+			justify-content:space-between;
 		}
 		&__item{
-			
 			width:33%;
 			border:none;
+			padding:0;
+			display:flex;
 		}
+		&__header{
+			padding:0 19.5%;
+		}
+		&__title{
+			font-size:21px;
+		}
+
 	}
 	.offer{
 		&__wrap{
