@@ -9,18 +9,30 @@
     background:url('../img/photo-background@1x.jpg') 100% 0% no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 46px 0px;
+    padding-top:20px;
+    padding-bottom:11px;
+
     position:relative;
+    &__wrap{
+        width:280px;
+        margin:0 auto;
+    }
     &__greeting{
-        display:inline-block;
-        margin-bottom:60px;
+        margin-top:28px;
+        margin-bottom:69px;
+        width:196px;
+        height:66px;
     }
     &__main-logo{
-        display:inline-block;
+        margin-top:28px;
+        margin-bottom:69px;
+        width:280px;
+        height:47px;
     }
     &__slogan{
-        margin-top:65px;
-        display:inline-block;
+        margin-bottom:37px;
+        width:197px;
+        height:48px;
     }
     &:before{
         content:'';
@@ -84,8 +96,9 @@
     }
     &__image{
         img{
+            display:block;
             width:100%;
-            min-height: 256px;
+            height: 256px;
         }
     }
 }
