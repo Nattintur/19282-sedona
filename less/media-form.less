@@ -1,0 +1,237 @@
+@media (min-width:@width-tablet-content){
+	.card{
+	    &__main-logo{
+	        width:457px;
+	        height:75px;
+	    }
+	}
+	
+	.main-page-header{
+		border:none;
+		padding:0 7.7%;
+		&__wrap{
+			padding:71px 0 65px 0;
+			width:68%;
+			margin:0 auto;
+		}
+		&__title{
+			margin:0;
+			font-size:30px;
+			line-height:26px;
+		}
+		&__descr{
+			margin-top:38px;
+			margin-bottom:0;
+			line-height:26px;
+		}
+	}
+	.form-review{
+		&__wrap{
+			padding:0 7.7%;
+		}
+		&__title{
+			.line-text();
+			margin-top:0;
+			margin-bottom:38px;
+		}
+	}
+	.person-data{
+		border:none;
+		padding-bottom:70px;
+		&__wrap{
+		    padding: 0;
+		    display: flex;
+		    justify-content: space-between;
+		}
+		&__name{
+			width: 27.1%;
+		}
+		label{
+			margin-bottom:15px;	
+		}
+		input[type="text"]{
+			width: 77.2%;
+			padding: 18px 11.4%;
+			margin:0;
+		}
+	}
+	.impression{
+		border:none;
+		&__wrap{
+			padding:0;
+		}
+		&__title{
+			margin:0;
+			.line-text();
+		}
+		&__list{
+			display: flex;
+    		margin-top: 46px;
+    		margin-bottom:58px;
+    		justify-content: space-between;
+		}
+		&__item{
+			width:41%;
+			margin:0;
+		}
+	}
+	.info-travel{
+		padding-bottom:70px;
+		border:none;
+		&__wrap{
+			padding:0px;
+		}
+		&__title{
+			margin:0;
+			.line-text();
+		}
+		&__period-travel{
+			display:flex;
+			justify-content:space-between;
+		}
+		&__item{
+			width:27.1%;
+			input[type="text"]{
+				width: 77.2%;
+    			padding: 18px 11.4%;
+    			height: 22px;
+    			margin: 0;
+			}
+		}
+
+	}
+	.quantity{
+		width:27.1%;
+		margin: 0 auto;
+		&__input{
+	        left: 61px;
+	        right: 61px;
+			input[type="text"]{
+			    padding: 0;
+	    		text-align: center;
+			}
+		}
+		span{
+			display:none;
+		}
+	}
+	.number-person{
+	    margin-bottom: 35px;
+		&__wrap{
+			padding:0px;
+		}
+		&__title{
+			margin:0;
+			.line-text();
+			h2{
+				.font-text();
+			}
+		}
+		.quantity{
+			width:31.1%;
+			label{
+				margin-left:0;
+				margin-top: 38px;
+    			margin-bottom: 15px;
+    			
+			}
+			&__control{
+				width:87.1%;
+				margin:0 auto;
+			}
+		}
+	}
+	.data-travel{
+		padding-bottom:72px;
+		border:none;
+		&__wrap{
+			padding:0;
+		}
+		&__item-person{
+			display:flex;
+			justify-content:space-between;
+		}
+		&__person-name{
+			width:29.2%;
+			input[type="text"]{
+				box-sizing: border-box;
+				width:100%;
+			}
+		}
+	}
+	.attraction{
+		padding-bottom:60px;
+		border:none;
+		&__wrap{
+			padding:0;
+		}
+		&__title{
+			margin:0;
+			.line-text();
+		}
+		&__list{
+			display:flex;
+			justify-content:center;
+			flex-wrap: wrap;
+			margin-top:45px;
+		}
+		&__item{
+			width:35.2%;
+			}
+		&__item:nth-of-type(1){
+				order:1;
+			}
+		&__item:nth-of-type(2){
+				order:3;
+			}
+		&__item:nth-of-type(3){
+				order:2;
+			}
+		&__item:nth-of-type(4){
+				order:4;
+			}
+		}
+	.images{
+		&__wrap{
+			padding:0;
+		}
+		&__title{
+			margin:0;
+			.line-text();
+			margin-bottom:60px;
+		}
+		&__btn-download{
+			margin: 0 auto;
+    		margin-bottom: 55px;
+		}
+		&__submit{
+			width:458px;
+		}
+	}
+	.images-block{
+		padding-left: 5.3%;
+	&__item{
+		width:140px;
+		margin-right:65px;
+		margin-bottom:35px;
+		img{
+			width:140px;
+			height:140px;
+		}
+		p{
+			display:block;
+			margin-top:20px;
+		}
+		&--close-icon{
+			&::before{
+				width:22px;
+				height:22px;
+				border:19px solid #f2f2f2;
+				top: -30px;
+    			margin-left: -30px;
+    			left: 100%;
+			}
+		}
+	}
+}
+}
