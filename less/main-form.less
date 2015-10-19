@@ -1,7 +1,13 @@
+.card{
+    &__main-logo{
+        width:174px;
+        height:30px;
+    }
+}
 .main-page-header{
     border-bottom:1px solid #cccccc;
     &__wrap{
-        padding:0 20px;
+        padding:0 6.25%;
         text-align:center;
     }
     &__title{
@@ -13,20 +19,22 @@
     }
 }
 .form-review{
-    &__wrap{}
     &__title{
         text-align: center;
         margin-top:20px;
         margin-bottom:35px;
-        .font-title();
+        h2{
+            .font-title();
+        }   
     }
 }
 .person-data{
     border-bottom:1px solid #ccc;
     &__wrap{
-        padding:0 20px;
+        padding:0 6.25%;
     }
     label{
+        .font-text();
         margin-left:20px;   
         &:not([for^="patronymic"])::after{
         content:'*';
@@ -46,7 +54,7 @@
 .impression{
     border-bottom:1px solid #ccc;
     &__wrap{
-        padding: 0 20px;
+        padding: 0 6.25%;
         text-align: center;
     }
     &__title{
@@ -66,6 +74,8 @@
     input[type="radio"]{
         display:none;}
     label{
+            .font-title();
+            text-transform: initial;
             display:inline-block;    
             &::before{
                 display:inline-block;
@@ -77,9 +87,7 @@
                 border: 18px solid #f2f2f2;
                 border-radius: 50%;    
                 background:#f2f2f2;
-                vertical-align: middle;
-                text-transform:initial;
-                .font-title(); 
+                vertical-align: middle; 
              }
         }  
     
@@ -96,7 +104,7 @@
     border-bottom:1px solid #ccc;
     padding-bottom:23px;
     &__wrap{
-        padding:0 20px;
+        padding:0 6.25%;
     }
     &__title{
         text-align: center;
@@ -117,56 +125,70 @@
         display:block;
         margin-top:15px;
         margin-bottom:20px;
+        .font-text();
     }
     label::after{
         content:'*';
         color:red;
     }
     span{
-        position:relative;
+        position: absolute;
+        right: 22px;
+        top: 26px;
         &::after{
             content:'дн.';
-            display: inline-block;
-            position:absolute;
             color:#c2c2c2;
-            top:0px;
-            left:-40px;
         }
     }
 }
 .quantity{
-    input[type="text"]{
-        width:108px;
-        display:inline-block;
-        background:#f2f2f2;
-        padding:17px;
-        vertical-align:middle;
-        margin:0 5px;
-        .font-title();
+    &__control{
+        height:58px;
+        position:relative;
     }
     &__button{
-        display:inline-block;
+        display: block;
+        position: absolute;
         background:#f2f2f2;
-        padding:20px;
-        border:none;
-        width:20px;
-        height:20px;
+        padding: 18px 20px;
+        border: none;
+        width: 21px;
+        height: 22px;
         vertical-align:middle;
         text-align:center;
         &--left{
             background:#f2f2f2 url('../img/sprites.png') 7px -93px no-repeat;
+            left: 0;
         }
         &--right{
             background:#f2f2f2 url('../img/sprites.png') -41px -93px no-repeat;
+            right:0;
+        }
+    }
+    &__input{
+        display: block;
+        position: absolute;
+        left: 67px;
+        right: 67px;
+        input[type="text"]{
+            width: 100%;
+            margin: 0;
+            padding: 0 22px;
+            box-sizing: border-box;
+            height: 58px;
+            background:#f2f2f2;
+            vertical-align:middle;
+            .font-title();
         }
     }
     label{
-        margin-bottom:15px;
+        .font-text();
     }
+
 }
 .number-person{
     &__wrap{
-        padding:0 20px;
+        padding:0 6.25%;
     }
     &__title{
         margin-top:20px;
@@ -174,26 +196,30 @@
         text-align:center;
     }
     span{
-        position:relative;
+        position: absolute;
+        right: 22px;
+        top: 26px;
         &::after{
             content:'чел.';
-            display: inline-block;
-            position:absolute;
-            top:0px;
-            left:-40px;
             color:#c2c2c2;
         }
     }
     label{
         margin-left:20px;
         display:block;
+        .font-text();
+        text-align:center;
+    }
+    label::after{
+        content:'*';
+        color:red;
     }
 }
 .data-travel{
     border-bottom:1px solid #ccc;
     padding-bottom:25px;
     &__wrap{
-        padding:0 20px;
+        padding:0 6.25%;
     }
     &__item-person{
         margin-top:40px;
@@ -208,7 +234,7 @@
             .font-text();
         }
     }
-    &__person{
+    &__person-name{
         display:inline-block;
         margin-left: 5px;
             label{
@@ -245,7 +271,7 @@
     padding-bottom:25px;
     &__wrap{
         text-align: center;
-        padding:0 20px;
+        padding:0 6.25%;
     }
     &__title{
         margin-top:20px;
@@ -303,7 +329,7 @@
 .images{
     margin-bottom:85px;
     &__wrap{
-        padding:0 20px;
+        padding:0 6.25%;
     }
     &__title{
         text-align:center;
@@ -319,43 +345,58 @@
         line-height:26px;
         text-transform:uppercase;
     }
-    &__item{
-        display:inline-block;
-        margin-right:30px;
-        margin-bottom:35px;
-        &--close-icon{
-        display:block;
-        text-align:center;
-        position:relative;
-        &::before{
-            content:'';
-            position:absolute;
-            border:8px solid #f2f2f2;
-            border-radius:50%;
-            width:12px;
-            height:12px;
-            background:#f2f2f2 url('../img/sprites.png') -116px -116px no-repeat;
-            left:50%;
-            top:-14px;
-            margin-left:-14px;
-        }
-        }
-    }
-    &__item:nth-of-type(3n){
-            margin-right:0px;
-    }
     &__submit{
         display:block;
         padding:20px;
         margin-top:10px;
         background:@blue-color;
         text-align:center;
+        margin:0 auto;
         color:@color-text;
         font-size:21px;
         line-height:26px;
     }
+}
+.images-block{
+    &::before,
+        &::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+    &__item{
+        display:block;
+        float:left;
+        width: 70px;
+        margin-right: 12.5%;
+        margin-bottom:35px;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        &--close-icon{
+            display:block;
+            position:relative;
+            &::before{
+                content:'';
+                position:absolute;
+                border:9px solid #f2f2f2;
+                border-radius:50%;
+                width:12px;
+                height:12px;
+                background:#f2f2f2 url('../img/cross.png') 50% 50% no-repeat;
+                left:50%;
+                top:-15px;
+                margin-left:-15px;
+            }
+        }
+        p{
+            display:none;
+        }
+    }
+}
 
-}    
+    
     
     
     
