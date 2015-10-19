@@ -1,26 +1,38 @@
 .container{
-    width: @width-mobile-content;
+    min-width: @width-mobile-content;
     background:@main-background;
     margin: 0 auto;
 }
 .main__wrap{}
 
 .card{ 
-    background:url('../img/background_for_main.jpg') 100% no-repeat;
+    background:url('../img/photo-background@1x.jpg') 100% 0% no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 46px 0px;
+    padding-top:20px;
+    padding-bottom:11px;
+
     position:relative;
+    &__wrap{
+        width:280px;
+        margin:0 auto;
+    }
     &__greeting{
-        display:inline-block;
-        margin-bottom:60px;
+        margin-top:28px;
+        margin-bottom:69px;
+        width:196px;
+        height:66px;
     }
     &__main-logo{
-        display:inline-block;
+        margin-top:28px;
+        margin-bottom:69px;
+        width:280px;
+        height:47px;
     }
     &__slogan{
-        margin-top:65px;
-        display:inline-block;
+        margin-bottom:37px;
+        width:197px;
+        height:48px;
     }
     &:before{
         content:'';
@@ -51,7 +63,6 @@
         padding:0 28px;
     }
     &__title{
-        width: 264px;
         margin-bottom: 25px;    
     }
     &:before{
@@ -84,9 +95,10 @@
        color:@color-text;
     }
     &__image{
-        min-height: 256px;
         img{
+            display:block;
             width:100%;
+            height: 256px;
         }
     }
 }
@@ -169,7 +181,7 @@
 }
 
 .map{
-    width: 320px;
+    width: 100%;
     height: 350px;
     background: url('https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=320&height=350&lang=ru_RU&sourceType=constructor') no-repeat;
 }

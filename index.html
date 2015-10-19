@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная страница</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -15,6 +16,7 @@
 				<ul class="navigation__list">
 					<li class="navigation__item"><a class="navigation__link" href="#">Карта штата</a></li>
 					<li class="navigation__item"><a class="navigation__link" href="#">Информация</a></li>
+					<li class="navigation__item"></li>
 					<li class="navigation__item"><a class="navigation__link" href="#">Фото и видео</a></li>
 					<li class="navigation__item"><a class="navigation__link" href="#">Гостиницы</a></li>
 				</ul>
@@ -23,7 +25,7 @@
             
 			<!--Логотип-->
 			<div class="logo">
-		    	<a class="logo__link" href="index.html">
+				<a class="logo__link" href="index.html">
 		        	<img src="img/logo.png" alt="logo">
 		    	</a>
 		    	<a class="menu-open" href="/"></a>
@@ -63,7 +65,7 @@
 		            </div>
 						<!--Картинка 1 причины-->
 						<div class="reason__image">
-							<img src="img/reason1.jpg"></img>
+							<img src="img/photo-city@1x.jpg"></img>
 						</div>
 		        </div>
 
@@ -94,7 +96,7 @@
 
 				<!--2 Причина-->
 				<div class="reason">
-		            <div class="reason__wrap">
+		            <div class="reason__wrap reason__wrap--change">
 						<!--Заголовок 2 причины-->
 						<div class="reason__header">
 							<h2 class="reason__title">Там есть мост дьявол</h2>
@@ -104,7 +106,7 @@
 		            </div>
 						<!--Картинка 2 причины-->
 						<div class="reason__image">
-							<img src="img/reason2.jpg"></img>
+							<img src="img/photo-bridge@1x.jpg"></img>
 						</div>  
 				</div>
 
@@ -116,7 +118,7 @@
 							<div class="features__header">
 								<h2 class="features__title">Небольшая площадь</h2>
 								<p class="features__number">-№3-</p>
-								<p class="features__descr-title">Все достопримечательности находятся очень близко</p>
+								<p class="features__descr-title">Все&nbsp;достопримечательности находятся очень близко</p>
 							</div>
 				    	</div>
 				    	<div class="features__item">
@@ -128,7 +130,7 @@
 				    	</div>
 				    	<div class="features__item">
 							<div class="features__header">
-								<h2 class="features__title">Красивая дорога</h2>
+								<h2 class="features__title">Мало туристов</h2>
 								<p class="features__number">-№5-</p>
 								<p class="features__descr-title">Большинство едет в Гранд Каньон и толпится там</p>
 							</div>
@@ -147,7 +149,7 @@
 
 			<!--Карта-->
 			<div class="map">
-		    	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=320&height=350&lang=ru_RU&sourceType=constructor"></script>
+		    	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=100%&height=350&lang=ru_RU&sourceType=constructor"></script>
 			</div>
 		</div>
 		</main>
@@ -164,7 +166,7 @@
 					<a class="social-links__item social-links__item--youtube" href="http://youtube.ru"></a>
 				</div>
 				<div class="page-footer__item">
-					<p>Разработано<a class="page-footer__link-copyright" href="#"></a></p>
+					<p class="page-footer__dev">Разработано<a class="page-footer__link-copyright" href="#"></a></p>
 				</div>
 			</div>
 		</footer>

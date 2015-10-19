@@ -8,3 +8,22 @@
     font-size: 14px;
     line-height: 26px;
 }
+.line-text(){
+	&:after{
+	    position:relative;
+	    content:"";
+	    display:block;
+	    border-bottom:1px solid #bdbdbd;
+	    top:-13px;
+	    z-index:1;
+	}
+	h2{
+		display:block;
+		background:#ffffff;
+		z-index:2;
+		position:relative;
+		width:400px;
+		margin:0 auto;
+		font-size:21px;
+	}
+}
