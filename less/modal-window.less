@@ -1,0 +1,93 @@
+.error{
+    display:none;
+}
+.success{
+    display:none;
+}
+@media (min-width:@width-tablet-content){
+	.error{
+		position:absolute;
+		display:block;
+		width:400px;
+		height:347px;
+		left:50%;
+		bottom: 412px;
+		margin-left:-200px;
+		background:#ffffff;
+		box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15),
+					-7px -7px 15px 0px rgba(0, 0, 0, 0.15);
+	            -webkit-box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15),
+					-7px -7px 15px 0px rgba(0, 0, 0, 0.15); 
+	            -moz-box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15),
+					-7px -7px 15px 0px rgba(0, 0, 0, 0.15); 
+		z-index:5;
+		&__wrap{
+			padding:40px 15% 49px 15%;
+		}
+		&__title{
+			width: 256px;
+			text-align:center;
+			font-size:30px;
+			line-height:40px;
+			margin-top:15px;
+			margin-bottom:25px;
+		}
+		&__text{
+			line-height:24px;
+			margin-bottom:32px;
+		}
+		&__btn{
+			display: block;
+		    padding: 16px 0;
+		    text-align: center;
+		    font-size: 21px;
+		    line-height: 26px;
+	    	color: @color-text;
+	    	background:@blue-color;
+		}
+	}
+	.success{
+		position:absolute;
+		display:block;
+		width:640px;
+		height:347px;
+		left:50%;
+		bottom: -65px;
+		margin-left:-320px;
+		background:#ffffff;
+		box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15),
+					-7px -7px 15px 0px rgba(0, 0, 0, 0.15);
+	            -webkit-box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15),
+					-7px -7px 15px 0px rgba(0, 0, 0, 0.15); 
+	            -moz-box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.15),
+					-7px -7px 15px 0px rgba(0, 0, 0, 0.15); 
+		z-index:5;
+		&__wrap{
+			padding:40px 14.21% 0px 14.21%;
+			margin-bottom:32px;
+		}
+		&__title{
+			text-align:center;
+			font-size:30px;
+			line-height:40px;
+			margin-top:15px;
+			margin-bottom:25px;
+		}
+		&__text{
+			line-height:24px;
+		}
+		&__btn{
+			padding: 44px 14.21%;
+			background:#f2f2f2;
+				a{
+				display: block;
+			    padding: 16px 0;
+			    text-align: center;
+			    font-size: 21px;
+			    line-height: 26px;
+		    	color: @color-text;
+		    	background:@blue-color;
+			}
+		}
+	}
+}
