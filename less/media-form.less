@@ -264,7 +264,9 @@
     		width:29.1%;
     	}
     	quantity{
-    		
+    		span{
+    			display:block;
+    		}	
     	}
     }
     .quantity{
@@ -272,10 +274,22 @@
     	&__input{
     		margin:0 6px;
     	}
+    	span{
+    			display:block;
+    	}
+    	&__input{
+        input[type="text"]{
+            padding: 0 22px;
+            text-align: initial;
+        }
+    }
     }
     .number-person{
     	.quantity{
     		margin-left:0;
+    		span{
+    			display:block;
+    		}
     	}
     }
     .attraction{
