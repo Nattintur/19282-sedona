@@ -15,6 +15,10 @@
 			box-shadow:none;
 				-webkit-box-shadow: none;
                 -moz-box-shadow:none;
+            &:hover,
+            &:active{
+            	background:@main-background;
+            }
 		}
 		&__item:nth-of-type(1){
 			order:4;
@@ -36,6 +40,21 @@
 			.font-title();
 			font-size:14px;
 			color:@color-link;
+			&:hover{
+            	color:rgba(129,179,210,1);
+        	}
+       		&:active{
+            	color:rgba(206,206,206,1);
+        	}
+        	&--active{
+        		color:rgba(118,99,87,1);
+        		&:hover{
+        			color:rgba(96,78,67,1);
+        		}
+        		&:active{
+        			color:rgba(219,216,213,1);
+        		}
+        	}
 		}
 	}
 	.menu-close,
