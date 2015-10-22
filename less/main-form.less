@@ -32,6 +32,10 @@
     border-bottom:1px solid #ccc;
     &__wrap{
         padding:0 6.25%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
     }
     label{
         .font-text();
@@ -43,8 +47,9 @@
     }
     input[type="text"]{
         display:block;
-        width:240px;
-        padding:20px;
+        width:86%;
+        height:22px;
+        padding: 18px 7.2%;
         background:#f2f2f2;
         margin-bottom:20px;
         margin-top:10px;
@@ -63,6 +68,9 @@
     }
     &__list{
         margin-bottom:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
     }
     &__item{
         text-align:left;
@@ -104,16 +112,25 @@
     border-bottom:1px solid #ccc;
     padding-bottom:23px;
     &__wrap{
-        padding:0 6.25%;
+        padding:0 6.25%;       
     }
     &__title{
         text-align: center;
         margin-top:20px;
     }
+    &__period-travel{
+        display:flex;
+        flex-direction: column;
+
+    }
+    &__item{
+
+    }
     input[type="text"]{
         display:block;
-        width:240px;
-        padding:20px;
+        width:86%;
+        height:22px;
+        padding: 18px 7.2%;
         background:#f2f2f2;
         .font-title();  
     }
@@ -142,6 +159,8 @@
     }
 }
 .quantity{
+    width:280px;
+    margin:0 auto;
     &__control{
         height:58px;
         position:relative;
@@ -222,11 +241,10 @@
         padding:0 6.25%;
     }
     &__item-person{
+        display:flex;
         margin-top:40px;
     }
     &__number{
-        display:inline-block;
-        vertical-align: top;
         label{
             display:block;
             text-align: center;
@@ -235,8 +253,11 @@
         }
     }
     &__person-name{
-        display:inline-block;
-        margin-left: 5px;
+        margin-left: 6px;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
             label{
                 margin-left:20px;
                 display:block;
@@ -248,8 +269,10 @@
                 color:red;
             }   
             input[type="text"]{
-                width:170px;
-                padding:20px;
+                width: 100%;
+                box-sizing: border-box;
+                height: 58px;
+                padding: 18px 9.6%;
                 background:#f2f2f2;
                 margin-bottom:20px;
                 .font-title();
@@ -259,8 +282,9 @@
             }
     }
     div[id="number-travel"]{
-        padding:20px 25px;
+        padding:18px 25px;
         width:10px;
+        height:22px;
         background:#f2f2f2;
         border:none;
         .font-title();
@@ -278,7 +302,9 @@
         margin-bottom:20px;
     }
     &__list{
-
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     &__item{
         text-align:left;
@@ -337,17 +363,20 @@
     }
     &__btn-download{
         display:block;
+        width: 87.5%;
+        padding:20px 0;
+        margin:0 auto;
         margin-bottom:55px;
         padding:20px 25px;
         background:#f2f2f2;
         color:#c4c4c4;
         font-size:21px;
         line-height:26px;
-        text-transform:uppercase;
     }
     &__submit{
         display:block;
-        padding:20px;
+        width: 87.5%;
+        padding:20px 0;
         margin-top:10px;
         background:@blue-color;
         text-align:center;
@@ -368,7 +397,7 @@
         display:block;
         float:left;
         width: 70px;
-        margin-right: 12.5%;
+        margin-right: 35px;
         margin-bottom:35px;
         img{
             width: 70px;
