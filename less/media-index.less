@@ -66,6 +66,7 @@
 		position:static;
 	}
 	.card{
+		position:relative;
 		padding-top:50px;
 		padding-bottom:53px;
 		&__wrap{
@@ -89,17 +90,21 @@
 			width:296px;
 			height:82px;
 		}
+		&__svg-triangle{
+			width: 100%;
+			height:37px;
+			left:0;
+		}
 	}
 	.description{
+		&__svg-triangle{
+			display:none;
+		}
 		&__title{
 			width: 440px;
     		margin: 0 auto;
     		font-size: 21px;
     		margin-top:40px;
-		}
-		&::before,
-		&::after{
-			border:none;
 		}
 		&__text{
 			margin-top:34px;
@@ -239,6 +244,17 @@
 @media (min-width:@width-desktop-content){
 	.container{
 		width:@width-desktop-content;
+	}
+	.description{
+		&__svg-triangle{
+			display:none;
+		}
+	}
+	.card{
+		position:relative;
+		&__svg-triangle{
+			height:57px;
+		}
 	}
 	.reason{
 		&__header{

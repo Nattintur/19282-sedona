@@ -21,7 +21,17 @@
             height:45px;
             display:inline-block;
             vertical-align:middle;
-            background:url('../img/sprites.png') -151px -48px no-repeat;    
+            fill:rgba(0,0,0,1);    
+        }
+        svg{
+            height:45px;
+            vertical-align: top;
+        }
+        &:hover{
+            fill:rgba(129,179,210,1);
+        }
+        &:active{
+            fill:rgba(178,178,178,1);
         }
     }
 }
@@ -33,14 +43,18 @@
         display:inline-block;
         vertical-align:top;
         margin-left:5px;
-        &--tw{
-            background:@blue-color url('../img/sprites.png') 5px -48px no-repeat ;
+        background:@blue-color;
+        fill:rgba(255,255,255,1);
+        svg{
+            height: 45px;
         }
-        &--fb{
-            background:@blue-color url('../img/sprites.png') -50px -48px no-repeat ;
+        &:hover{
+            background:rgba(102,158,192,1);
+            fill:rgba(255,255,255,1);
         }
-        &--youtube{
-            background:@blue-color url('../img/sprites.png') -103px -48px no-repeat ;
+        &:active{
+            background:rgba(84,150,189,1);
+            fill:rgba(136,182,209,1);
         }
     }  
 }

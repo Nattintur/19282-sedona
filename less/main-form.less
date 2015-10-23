@@ -202,13 +202,25 @@
         height: 22px;
         vertical-align:middle;
         text-align:center;
+        fill:rgba(184,184,184,1);
+        &:hover{
+            background:rgba(229,229,229,1);
+            fill:rgba(140,140,140,1);
+        }
+        &:active{
+            background:rgba(213,213,213,1);
+            fill:rgba(196,196,196,1);
+        }
         &--left{
-            background:#f2f2f2 url('../img/sprites.png') 7px -93px no-repeat;
             left: 0;
         }
         &--right{
-            background:#f2f2f2 url('../img/sprites.png') -41px -93px no-repeat;
             right:0;
+
+        }
+        svg{
+                width:21px;
+                height:21px;
         }
     }
     &__input{
@@ -437,6 +449,14 @@
         color:#c4c4c4;
         font-size:21px;
         line-height:26px;
+        &:hover{
+            background:rgba(229,229,229,1);
+            color:rgba(140,140,140,1);
+        }
+        &:active{
+            background:rgba(213,213,213,1);
+            color:rgba(175,175,175,1);
+        }
     }
     &__submit{
         display:block;

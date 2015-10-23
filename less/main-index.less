@@ -38,23 +38,13 @@ body{
         width:197px;
         height:48px;
     }
-    &:before{
-        content:'';
-        position:absolute;
-        bottom:0px;
-        left:0px;
-        border-top:24px solid transparent;
-        border-left:160px solid @main-background;
-        z-index: 1;
-    }
-    &:after{
-        content:'';
-        position:absolute;
-        bottom:0px;
-        right: 0px;
-        border-top:24px solid transparent;
-        border-right:160px solid @main-background;
-        z-index: 1;
+    &__svg-triangle{
+            position:absolute;
+            display:block;
+            bottom:0;
+            left:-50%;
+            width: 200%;
+            height:36px;
     }
 }
 
@@ -70,23 +60,12 @@ body{
         margin-top:16px;
         margin-bottom: 27px;    
     }
-    &:before{
-        content:'';
+    &__svg-triangle{
         position:absolute;
-        border-top:24px solid transparent;
-        border-left:160px solid @blue-color;
-        left:0px;
-        bottom: 0px;
-        z-index: 1;    
-    }
-    &:after{
-        content:'';
-        position:absolute;
-        border-top:24px solid transparent;
-        border-right:160px solid @blue-color;
-        right:0px;
-        bottom: 0px;
-        z-index: 1;
+        width:200%;
+        bottom:0;
+        left:-50%;
+        height:36px;
     }
 }
 .reason{
