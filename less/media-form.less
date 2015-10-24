@@ -1,6 +1,6 @@
 @media (min-width:@width-tablet-content){
 	.card{
-	    &__main-logo{
+	    &__main-logo--min{
 	        width:457px;
 	        height:75px;
 	    }
@@ -26,7 +26,6 @@
 		}
 	}
 	.form-review{
-		position:relative;
 		&__wrap{
 			padding:0 7.7%;
 		}
@@ -41,7 +40,7 @@
 		padding-bottom:70px;
 		&__wrap{
 		    padding: 0;
-		    display: flex;
+		    flex-direction: row;
 		    justify-content: space-between;
 		}
 		&__name{
@@ -66,10 +65,11 @@
 			.line-text();
 		}
 		&__list{
-			display: flex;
+			flex-direction: row;
     		margin-top: 46px;
     		margin-bottom:58px;
     		justify-content: space-between;
+    		align-items: stretch;
 		}
 		&__item{
 			width:41%;
@@ -87,7 +87,9 @@
 			.line-text();
 		}
 		&__period-travel{
-			display:flex;
+			flex-direction:row;
+			margin:0;
+			width:100%;
 			justify-content:space-between;
 		}
 		&__item{
@@ -126,16 +128,12 @@
 			.line-text();
 		}
 		.quantity{
-			width:31.1%;
 			label{
 				margin-left:0;
 				margin-top: 38px;
     			margin-bottom: 15px;
+    			text-align:center;
     			
-			}
-			&__control{
-				width:87.1%;
-				margin:0 auto;
 			}
 		}
 	}
@@ -146,15 +144,16 @@
 			padding:0;
 		}
 		&__item-person{
-			display:flex;
-			justify-content:space-between;
+			justify-content:flex-start;
 		}
 		&__person-name{
-			width:29.2%;
-			input[type="text"]{
-				box-sizing: border-box;
-				width:100%;
-			}
+			width:93%;
+			flex-direction: row;
+		}
+		&__last-name,
+		&__first-name,
+		&__patronymic{
+			width:31.5%;
 		}
 	}
 	.attraction{
@@ -168,9 +167,9 @@
 			.line-text();
 		}
 		&__list{
-			display:flex;
-			justify-content:center;
+			flex-direction: row;
 			flex-wrap: wrap;
+			justify-content: space-around;
 			margin-top:45px;
 		}
 		&__item{
@@ -192,6 +191,7 @@
 	.images{
 		&__wrap{
 			padding:0;
+			position:relative;
 		}
 		&__title{
 			margin:0;
@@ -199,38 +199,133 @@
 			margin-bottom:60px;
 		}
 		&__btn-download{
-			margin: 0 auto;
-    		margin-bottom: 55px;
+    		margin-bottom: 88px;
     		width: 458px;
+		}
+		&__drag-photos{
+		    margin-bottom: 88px;
+		    top: 85px;
+		    width:100%;
 		}
 		&__submit{
 			width:458px;
 		}
+
 	}
 	.images-block{
-		padding-left: 5.3%;
-	&__item{
-		width:140px;
-		margin-right:65px;
-		margin-bottom:35px;
-		img{
-			width:140px;
-			height:140px;
-		}
-		p{
-			display:block;
-			margin-top:20px;
-		}
-		&--close-icon{
-			&::before{
-				width:22px;
-				height:22px;
-				border:19px solid #f2f2f2;
-				top: -30px;
-    			margin-left: -30px;
-    			left: 100%;
-				}
+		width: 640px;
+		&__item{
+			width: 140px;
+			margin-right: 32px;
+			margin-left: 32px;
+			margin-bottom: 35px;
+			img{
+				width: 140px;
+				height: 140px;
+			}
+			p{
+				display: block;
+				margin-top: 20px;
 			}
 		}
+		&__close-link{
+			&:before{
+				border: 30px solid #f2f2f2;
+				top: -30px;
+				margin-left: -30px;
+				left: 100%;
+			}
+			&--icon{
+				width: 24px;
+				height: 24px;
+				left: 100%;
+				margin-left: -12px;
+				top: -12px;
+			}
+			&:nth-of-type(3n){
+	        	margin-right: 0;
+	    	}
+	    	&:hover:before{
+            	border: 30px solid rgba(229,229,229,1);
+        	}
+        	&:active:before{
+            	border: 30px solid rgba(213,213,213,1);  
+        	}
+		}
 	}
+}
+
+@media (min-width:@width-desktop-content){
+	.container{
+		min-width:@width-desktop-content;
+	}
+    .form-review{
+    	&__wrap{
+    		padding: 0 10%;
+    	}
+    }
+    .person-data{
+    	&__name{
+    		width:29%;
+    	}
+    }
+    .impression{
+    	&__list{
+    		justify-content: flex-end;
+    	}
+    }
+    .info-travel{
+    	&__item{
+    		width:29.1%;
+    	}
+    	quantity{
+    		span{
+    			display:block;
+    		}	
+    	}
+    }
+    .quantity{
+    	width:29.1%;
+    	&__input{
+    		margin:0 6px;
+    	}
+    	span{
+    			display:block;
+    	}
+    	&__input{
+        input[type="text"]{
+            padding: 0 22px;
+            text-align: initial;
+        }
+    }
+    }
+    .number-person{
+    	.quantity{
+    		margin-left:0;
+    		span{
+    			display:block;
+    		}
+    	}
+    }
+    .attraction{
+    	&__list{
+    		justify-content: space-between;
+    	}
+    	&__item{
+    		width: 21%;
+    	}
+    }
+    .images-block{
+    	width: 988px;
+    	&__item{
+			margin-right: 65px;
+			margin-left: 0;
+			&:nth-of-type(3n){
+            	margin-right: 65px;
+        	}
+	    	&:nth-of-type(5n){
+				margin-right: 0;
+			}
+		}
+    }
 }
