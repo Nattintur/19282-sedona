@@ -1,6 +1,6 @@
 @media (min-width:@width-tablet-content){
 	.card{
-	    &__main-logo{
+	    &__main-logo--min{
 	        width:457px;
 	        height:75px;
 	    }
@@ -149,11 +149,6 @@
 		&__person-name{
 			width:93%;
 			flex-direction: row;
-			input[type="text"]{
-				/*height: 58px;
-				box-sizing: border-box;
-				width:100%;*/
-			}
 		}
 		&__last-name,
 		&__first-name,
@@ -196,6 +191,7 @@
 	.images{
 		&__wrap{
 			padding:0;
+			position:relative;
 		}
 		&__title{
 			margin:0;
@@ -203,38 +199,58 @@
 			margin-bottom:60px;
 		}
 		&__btn-download{
-			margin: 0 auto;
-    		margin-bottom: 55px;
+    		margin-bottom: 88px;
     		width: 458px;
+		}
+		&__drag-photos{
+		    margin-bottom: 88px;
+		    top: 85px;
+		    width:100%;
 		}
 		&__submit{
 			width:458px;
 		}
+
 	}
 	.images-block{
-	&__item{
-		width:140px;
-		margin-right:65px;
-		margin-left:0;
-		margin-bottom:35px;
-		img{
-			width:140px;
-			height:140px;
-		}
-		p{
-			display:block;
-			margin-top:20px;
-		}
-		&--close-icon{
-			&::before{
-				width:22px;
-				height:22px;
-				border:19px solid #f2f2f2;
-				top: -30px;
-    			margin-left: -30px;
-    			left: 100%;
-				}
+		width: 640px;
+		&__item{
+			width: 140px;
+			margin-right: 32px;
+			margin-left: 32px;
+			margin-bottom: 35px;
+			img{
+				width: 140px;
+				height: 140px;
 			}
+			p{
+				display: block;
+				margin-top: 20px;
+			}
+		}
+		&__close-link{
+			&:before{
+				border: 30px solid #f2f2f2;
+				top: -30px;
+				margin-left: -30px;
+				left: 100%;
+			}
+			&--icon{
+				width: 24px;
+				height: 24px;
+				left: 100%;
+				margin-left: -12px;
+				top: -12px;
+			}
+			&:nth-of-type(3n){
+	        	margin-right: 0;
+	    	}
+	    	&:hover:before{
+            	border: 30px solid rgba(229,229,229,1);
+        	}
+        	&:active:before{
+            	border: 30px solid rgba(213,213,213,1);  
+        	}
 		}
 	}
 }
@@ -300,8 +316,16 @@
     	}
     }
     .images-block{
-    &__item:nth-of-type(5n){
-		margin-right:0;
-	}
+    	width: 988px;
+    	&__item{
+			margin-right: 65px;
+			margin-left: 0;
+			&:nth-of-type(3n){
+            	margin-right: 65px;
+        	}
+	    	&:nth-of-type(5n){
+				margin-right: 0;
+			}
+		}
     }
 }

@@ -1,149 +1,150 @@
 .card{
-    &__main-logo{
+    &__main-logo--min{
         width:174px;
         height:30px;
     }
 }
 .main-page-header{
-    border-bottom:1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     &__wrap{
-        padding:0 6.25%;
-        text-align:center;
+        padding: 0 6.25%;
+        text-align: center;
     }
     &__title{
-        margin-top:76px;
+        margin-top: 76px;
         }
     &__descr{
-        margin-top:35px;
-        margin-bottom:20px;
+        margin-top: 35px;
+        margin-bottom: 20px;
     }
 }
 .form-review{
     &__title{
         text-align: center;
-        margin-top:20px;
-        margin-bottom:35px;
+        margin-top: 20px;
+        margin-bottom: 35px;
         h2{
             .font-title();
         }   
     }
 }
 .person-data{
-    border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     &__wrap{
-        padding:0 6.25%;
+        padding: 0 6.25%;
         display: flex;
         flex-direction: column;
     }
-    &__name{
-    }
     label{
         .font-text();
-        margin-left:20px;   
+        margin-left: 20px;   
         &:not([for^="patronymic"])::after{
-        content:'*';
-        color:red;
+        content: '*';
+        color: red;
         } 
     }
     input[type="text"]{
-        display:block;
-        width:86%;
-        height:22px;
+        display: block;
+        width: 86%;
+        height: 22px;
         padding: 18px 7.2%;
-        margin-bottom:20px;
-        margin-top:10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
         .font-title();
     }
 }
 .impression{
-    border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     &__wrap{
         padding: 0 6.25%;
         text-align: center;
     }
     &__title{
-        margin-top:20px;
-        margin-bottom:25px;
+        margin-top: 20px;
+        margin-bottom: 25px;
     }
     &__list{
-        margin-bottom:20px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;  
     }
     &__item{
-        text-align:left;
-        margin-bottom:10px;
+        text-align: left;
+        margin-bottom: 10px;
         &:last-of-type{
-            margin-bottom:0px;
+            margin-bottom: 0px;
         }
     }
     input[type="radio"]{
-        display:none;
+        display: none;
     }
     label{
-            .font-title();
-            text-transform: initial;
-            display:inline-block;    
-            &::before{
-                display:inline-block;
-                content:'';
-                width: 20px;
-                height: 20px;
-                margin-right: 20px;
-                cursor: pointer;   
-                border: 18px solid #f2f2f2;
-                border-radius: 50%;    
-                background:#f2f2f2;
-                vertical-align: middle; 
-            }
-            &:hover:before{
-                border: 18px solid rgba(229,229,229,1);
-                background:rgba(229,229,229,1);
-            }
-            &:active:before{
-                border: 18px solid rgba(213,213,213,1);
-                background:rgba(213,213,213,1);
-            }
-        }  
+        .font-title();
+        text-transform: initial;
+        display: inline-block;    
+        &::before{
+            display: inline-block;
+            content: '';
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            cursor: pointer;   
+            border: 18px solid #f2f2f2;
+            border-radius: 50%;    
+            background: #f2f2f2;
+            vertical-align: middle; 
+        }
+        &:hover:before{
+            border: 18px solid rgba(229,229,229,1);
+            background: rgba(229,229,229,1);
+            transition: @transition-hover;
+        }
+        &:active:before{
+            border: 18px solid rgba(213,213,213,1);
+            background: rgba(213,213,213,1);
+        }
+    }  
     
     #radio-1:checked ~ label[for="radio-1"]::before{
-        background:rgba(51,51,51,1);
+        background: rgba(51,51,51,1);
         vertical-align: middle;
     }
     #radio-1:checked ~ label[for="radio-1"]:hover:before{
                 border: 18px solid rgba(229,229,229,1);
-                background:rgba(51,51,51,1);
+                background: rgba(51,51,51,1);
+                transition: @transition-hover;
     }
     #radio-1:checked ~ label[for="radio-1"]:active:before{
                 border: 18px solid rgba(213,213,213,1);
-                background:rgba(164,164,164,1);
+                background: rgba(164,164,164,1);
     }
     #radio-2:checked ~ label[for="radio-2"]::before{
-        background:rgba(51,51,51,1);
+        background: rgba(51,51,51,1);
         vertical-align: middle;
     }
     #radio-2:checked ~ label[for="radio-2"]:hover:before{
                 border: 18px solid rgba(229,229,229,1);
-                background:rgba(51,51,51,1);
+                background: rgba(51,51,51,1);
+                transition: @transition-hover;
     }
     #radio-2:checked ~ label[for="radio-2"]:active:before{
                 border: 18px solid rgba(213,213,213,1);
-                background:rgba(164,164,164,1);
+                background: rgba(164,164,164,1);
     }
 }
 .info-travel{
-    border-bottom:1px solid #ccc;
-    padding-bottom:23px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 23px;
     &__wrap{
-        padding:0 6.25%;       
+        padding: 0 6.25%;       
     }
     &__title{
         text-align: center;
-        margin-top:20px;
+        margin-top: 20px;
     }
     &__period-travel{
-        display:flex;
+        display: flex;
         flex-direction: column;
 
     }
@@ -151,29 +152,22 @@
 
     }
     input[type="text"]{
-        display:block;
-        width:86%;
-        height:22px;
+        display: block;
+        width: 86%;
+        height: 22px;
         padding: 18px 7.2%;
         .font-title();  
     }
-    input[id="date-end"]{
-        background:rgba(255,255,255,1);
-        box-shadow: inset 0px 0px 1px 2px #b8b8b8;
-                -webkit-box-shadow: inset 0px 0px 1px 2px #b8b8b8;
-                -moz-box-shadow: inset 0px 0px 1px 2px #b8b8b8;
-        .font-title();
-    }
     label{
-        margin-left:20px;
-        display:block;
-        margin-top:15px;
-        margin-bottom:20px;
+        margin-left: 20px;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 20px;
         .font-text();
     }
     label::after{
         content:'*';
-        color:red;
+        color: red;
     }
     span{
         position: absolute;
@@ -206,6 +200,7 @@
         &:hover{
             background:rgba(229,229,229,1);
             fill:rgba(140,140,140,1);
+            transition:@transition-hover;
         }
         &:active{
             background:rgba(213,213,213,1);
@@ -372,6 +367,7 @@
         label:hover:before{
             border: 15px solid rgba(229,229,229,1);
             background:rgba(229,229,229,1);
+            transition:@transition-hover;
         }
         label:active:before{
             border: 15px solid rgba(213,213,213,1);
@@ -386,6 +382,7 @@
     #checkbox-1:checked ~ label[for="checkbox-1"]:hover:before{
                 border: 15px solid rgba(229,229,229,1);
                 background:rgba(229,229,229,1) url('../img/checkbox.png') no-repeat;
+                transition:@transition-hover;
     }
     #checkbox-1:checked ~ label[for="checkbox-1"]:active:before{
                 border: 15px solid rgba(213,213,213,1);
@@ -398,6 +395,7 @@
     #checkbox-2:checked ~ label[for="checkbox-2"]:hover:before{
                 border: 15px solid rgba(229,229,229,1);
                 background:rgba(229,229,229,1) url('../img/checkbox.png') no-repeat;
+                transition:@transition-hover;
     }
     #checkbox-2:checked ~ label[for="checkbox-2"]:active:before{
                 border: 15px solid rgba(213,213,213,1);
@@ -410,6 +408,7 @@
     #checkbox-3:checked ~ label[for="checkbox-3"]:hover:before{
                 border: 15px solid rgba(229,229,229,1);
                 background:rgba(229,229,229,1) url('../img/checkbox.png') no-repeat;
+                transition:@transition-hover;
     }
     #checkbox-3:checked ~ label[for="checkbox-3"]:active:before{
                 border: 15px solid rgba(213,213,213,1);
@@ -422,6 +421,7 @@
     #checkbox-4:checked ~ label[for="checkbox-4"]:hover:before{
                 border: 15px solid rgba(229,229,229,1);
                 background:rgba(229,229,229,1) url('../img/checkbox.png') no-repeat;
+                transition:@transition-hover;
     }
     #checkbox-4:checked ~ label[for="checkbox-4"]:active:before{
                 border: 15px solid rgba(213,213,213,1);
@@ -431,6 +431,7 @@
 
 .images{
     margin-bottom:85px;
+    position: relative;
     &__wrap{
         padding:0 6.25%;
     }
@@ -441,10 +442,10 @@
     &__btn-download{
         display:block;
         width: 87.5%;
-        padding:20px 0;
         margin:0 auto;
         margin-bottom:55px;
-        padding:20px 25px;
+        padding:16px 0;
+        text-align:center;
         background:#f2f2f2;
         color:#c4c4c4;
         font-size:21px;
@@ -452,16 +453,35 @@
         &:hover{
             background:rgba(229,229,229,1);
             color:rgba(140,140,140,1);
+            transition:@transition-hover;
         }
         &:active{
             background:rgba(213,213,213,1);
             color:rgba(175,175,175,1);
         }
     }
+    &__drag-photos{
+        position: absolute;
+        width: 87.5%;
+        display: none;
+        margin: 0 auto;
+        margin-bottom: 55px;
+        padding: 16px 0;
+        background: @blue-color;
+        top:45px;
+        color:@color-text;
+        font-size: 21px;
+        line-height: 26px;
+        text-align: center;
+        &:hover{
+            background:rgba(102,158,192,1);
+            transition:@transition-hover;
+        }
+    }
     &__submit{
         display:block;
         width: 87.5%;
-        padding:20px 0;
+        padding:16px 0;
         margin-top:10px;
         background:@blue-color;
         text-align:center;
@@ -473,6 +493,8 @@
     }
 }
 .images-block{
+    width: 280px;
+    margin: 0 auto;
     &::before,
         &::after{
             content:'';
@@ -480,34 +502,61 @@
             clear:both;
         }
     &__item{
-        display:block;
-        float:left;
+        display: block;
+        float: left;
         width: 70px;
         margin-right: 35px;
-        margin-bottom:35px;
+        margin-bottom: 35px;
         img{
             width: 70px;
             height: 70px;
         }
-        &--close-icon{
-            display:block;
-            position:relative;
-            &::before{
-                content:'';
-                position:absolute;
-                border:9px solid #f2f2f2;
-                border-radius:50%;
-                width:12px;
-                height:12px;
-                background:#f2f2f2 url('../img/cross.png') 50% 50% no-repeat;
-                left:50%;
-                top:-15px;
-                margin-left:-15px;
-            }
+        &:nth-of-type(3n){
+            margin-right:0;
         }
-        p{
-            display:none;
+    }
+
+    &__close-link{
+        display:block;
+        position:relative;
+        &:before{
+            content:'';
+            position:absolute;
+            border:15px solid #f2f2f2;
+            border-radius:50%;
+            left:50%;
+            top:-15px;
+            margin-left:-15px;
         }
+        &--icon{
+            position:absolute;
+            width:12px;
+            height:12px;
+            left:50%;
+            top: -6px;
+            margin-left: -6px;
+            fill: rgba(184,184,184,1);
+        }
+        &:hover:before{
+            border: 15px solid rgba(229,229,229,1);
+            transition:@transition-hover;
+        }
+        &:active:before{
+            border: 15px solid rgba(213,213,213,1);  
+            transition:@transition-hover;
+        }
+        &:hover .images-block__close-link--icon{
+            fill: rgba(140,140,140,1);
+            transition:@transition-hover;
+        }
+        &:active .images-block__close-link--icon{
+            fill: rgba(196,196,196,1);
+            transition:@transition-hover;
+        }
+    }
+
+    p{
+        display:none;
     }
 }
 

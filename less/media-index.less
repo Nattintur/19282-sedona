@@ -2,73 +2,12 @@
 	.container{
 		width:@width-tablet-content;
 	}
-	.navigation{
-		padding:0;
-		&__list{
-			flex-direction:row;
-			justify-content:space-between;
-		}
-		&__item{
-			width:20%;
-			display:block;
-			background:@main-background;
-			box-shadow:none;
-				-webkit-box-shadow: none;
-                -moz-box-shadow:none;
-            &:hover,
-            &:active{
-            	background:@main-background;
-            }
-		}
-		&__item:nth-of-type(1){
-			order:4;
-		}
-		&__item:nth-of-type(2){
-			order:1;
-		}
-		&__item:nth-of-type(3){
-			display:block;
-			order:3;
-		}
-		&__item:nth-of-type(4){
-			order:2;
-		}
-		&__item:nth-of-type(5){
-			order:5;
-		}
-		&__link{
-			.font-title();
-			font-size:14px;
-			color:@color-link;
-			&:hover{
-            	color:rgba(129,179,210,1);
-        	}
-       		&:active{
-            	color:rgba(206,206,206,1);
-        	}
-        	&--active{
-        		color:rgba(118,99,87,1);
-        		&:hover{
-        			color:rgba(96,78,67,1);
-        		}
-        		&:active{
-        			color:rgba(219,216,213,1);
-        		}
-        	}
-		}
-	}
-	.menu-close,
-	.menu-open{
-		display:none;
-	}
-	.logo{
-		height:0px;
-		position:static;
-	}
+	
 	.card{
 		position:relative;
 		padding-top:50px;
 		padding-bottom:53px;
+		overflow: hidden;
 		&__wrap{
 			width:456px;
         	margin:0 auto;
@@ -80,7 +19,7 @@
 			height:86px;
 		}
 		&__main-logo{
-			margin-top:54px;
+			margin-top: 0;
 			margin-bottom:57px;
 			width:456px;
 			height:76px;
@@ -123,7 +62,7 @@
 			}
 		}
 		&__header{
-			padding:25px 19.4% 30px 19.4%;
+			padding: 25px 18.1% 30px 18.1%;
 		}
 		&__title{
 			font-size:21px;
@@ -138,8 +77,14 @@
 			line-height:21px;
 		}
 		&__image{
-			display:block;
-			width:67%;
+	        width: 67%;
+	        position: relative;
+	        overflow: hidden;
+	        transform: translateY(-50%);
+	        top: 50%;
+	        img{
+	            width:100%;  
+	        }
 		}
 	}
 
@@ -157,11 +102,15 @@
 			&:first-of-type{
 				margin-top:0;
 			}
+			&:nth-of-type(1){
+				order:1;
+			}
 			&:nth-of-type(2){
 				order:3;
 			}
 			&:last-of-type{
 				margin-bottom:0;
+				order:2;
 			}
 		}
 		&__image{
@@ -225,22 +174,6 @@
 			margin-top:30px;
 			margin-bottom:45px;
 		}
-	}
-	.page-footer{
-		&__wrap{
-			padding:36px 20px;
-			flex-direction:row;
-		}
-		&__item{
-			width:33%;
-		}
-		&__dev{
-			margin:0;
-		}
-	}
-	.social-links{
-		padding:0px;
-		width:33%;
 	}
 }
 @media (min-width:@width-desktop-content){

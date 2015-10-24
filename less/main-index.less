@@ -15,36 +15,49 @@ body{
     text-align: center;
     padding-top:20px;
     padding-bottom:11px;
-    background-position:50% 50%;
+    background-position:50% 40%;
     position:relative;
+    overflow: hidden;
     &__wrap{
         width:280px;
         margin:0 auto;
     }
     &__greeting{
+        margin: 0 auto;
         margin-top:28px;
-        margin-bottom:69px;
-        width:196px;
-        height:66px;
+        width:144px;
+        height:35px;
+        display: block;
+        fill: rgba(129,179,210,1);
+    }
+    
+    &__text-tothedorgeous{
+        margin-top: 8px;
+        margin-bottom: 69px;
+        width: 196px;
+        height: 24px;
+        fill: rgba(118,99,87,1);
     }
     &__main-logo{
         margin-top:28px;
         margin-bottom:69px;
         width:280px;
         height:47px;
+        fill: rgba(255,255,255,1);
     }
     &__slogan{
         margin-bottom:37px;
-        width:197px;
+        width: 197px;
         height:48px;
+        fill: rgba(255,255,255,1);
     }
     &__svg-triangle{
-            position:absolute;
-            display:block;
-            bottom:0;
-            left:-50%;
+            position: absolute;
+            display: block;
+            bottom: -1px;
+            left: -50%;
             width: 200%;
-            height:36px;
+            height: 36px;
     }
 }
 
@@ -53,6 +66,7 @@ body{
     padding-top: 22px;
     padding-bottom: 42px;
     text-align: center;
+    overflow: hidden;
     &__wrap{
         padding:0 8.7%;
     }
@@ -111,6 +125,7 @@ body{
         display:inline-block;
         vertical-align: top;
         fill:@blue-color;
+        margin-right: 10px;
     }
     &__title{
         text-align:left;
@@ -180,5 +195,5 @@ body{
 .map{
     width: 100%;
     height: 350px;
-    background: url('https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=320&height=350&lang=ru_RU&sourceType=constructor') no-repeat;
+    background: url('https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=owLTVsyuF1M94FxGi1W_8FaRu9UHPLpZ&width=600&height=450&lang=ru_RU&sourceType=constructor') 50% no-repeat;
 }
