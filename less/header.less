@@ -3,17 +3,41 @@
     &__wrap{   
     }
 }
+/*  Логотип */
 .logo{
-        height: @height-logo;
-        position: relative;
-        &__link{
-            width: @width-logo;
-            height: 70px;
-            display:block;
-            position:absolute;
-            top:0px;
-            left:50%;
-            margin-left: -(@width-logo/2);
-            z-index: 99;
+    height: @height-logo;
+    position: relative;
+    &__link{
+        width: @width-logo;
+        height: 70px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin-left: -(@width-logo/2);
+        z-index: 99;
+        fill: @blue-color;
+        &:hover{
+            fill: rgba(102,158,192,1);
+            transition: @transition-hover;
         }
+        &:active{
+            fill: rgba(84,150,189,1);
+            color: rgba(148,185,210,1);
+        }  
+    }
+    &__img{
+        position: absolute; 
+        top: 0;
+        left: 50%;
+        margin-left: -34px; 
+    }
+}
+
+/*  Стили для планшета  */
+@media (min-width:@width-tablet-content){
+    .logo{
+        height: 0px;
+        position: static;
+    }
 }

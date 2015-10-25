@@ -1,87 +1,85 @@
+body{
+    background:#f2f2f2;
+}
 .container{
     min-width: @width-mobile-content;
     background:@main-background;
     margin: 0 auto;
+    box-shadow: 0px 0px 15px 5px rgba(0,1,1,0.2);
+            -webkit-box-shadow: 0px 0px 15px 5px rgba(0,1,1,0.2);
+            -moz-box-shadow: 0px 0px 15px 5px rgba(0,1,1,0.2);
 }
-.main__wrap{}
-
 .card{ 
     background:url('../img/photo-background@1x.jpg') 100% 0% no-repeat;
     background-size: cover;
     text-align: center;
     padding-top:20px;
     padding-bottom:11px;
-
+    background-position:50% 40%;
     position:relative;
+    overflow: hidden;
     &__wrap{
         width:280px;
         margin:0 auto;
     }
     &__greeting{
+        margin: 0 auto;
         margin-top:28px;
-        margin-bottom:69px;
-        width:196px;
-        height:66px;
+        width:144px;
+        height:35px;
+        display: block;
+        fill: rgba(129,179,210,1);
+    }
+    
+    &__text-tothedorgeous{
+        margin-top: 8px;
+        margin-bottom: 69px;
+        width: 196px;
+        height: 24px;
+        fill: rgba(118,99,87,1);
     }
     &__main-logo{
         margin-top:28px;
         margin-bottom:69px;
         width:280px;
         height:47px;
+        fill: rgba(255,255,255,1);
     }
     &__slogan{
         margin-bottom:37px;
-        width:197px;
+        width: 197px;
         height:48px;
+        fill: rgba(255,255,255,1);
     }
-    &:before{
-        content:'';
-        position:absolute;
-        bottom:0px;
-        left:0px;
-        border-top:24px solid transparent;
-        border-left:160px solid @main-background;
-        z-index: 1;
-    }
-    &:after{
-        content:'';
-        position:absolute;
-        bottom:0px;
-        right: 0px;
-        border-top:24px solid transparent;
-        border-right:160px solid @main-background;
-        z-index: 1;
+    &__svg-triangle{
+            position: absolute;
+            display: block;
+            bottom: -1px;
+            left: -50%;
+            width: 200%;
+            height: 36px;
     }
 }
 
 .description{
     position: relative;
     padding-top: 22px;
-    padding-bottom: 34px;
+    padding-bottom: 42px;
     text-align: center;
+    overflow: hidden;
     &__wrap{
-        padding:0 28px;
+        padding:0 8.7%;
     }
     &__title{
-        margin-bottom: 25px;    
+        margin-top:16px;
+        margin-bottom: 27px;    
     }
-    &:before{
-        content:'';
+    &__svg-triangle{
         position:absolute;
-        border-top:24px solid transparent;
-        border-left:160px solid @blue-color;
-        left:0px;
-        bottom: 0px;
-        z-index: 1;    
-    }
-    &:after{
-        content:'';
-        position:absolute;
-        border-top:24px solid transparent;
-        border-right:160px solid @blue-color;
-        right:0px;
-        bottom: 0px;
-        z-index: 1;
+        width:200%;
+        bottom:0;
+        left:-50%;
+        height:36px;
     }
 }
 .reason{
@@ -91,8 +89,21 @@
         padding: 0px 20px;
     }
     &__header{
-       padding:27px 0px; 
+       padding:30px 0px; 
        color:@color-text;
+    }
+    &__title{
+        margin:10px 0;
+    }
+    &__number{
+        line-height:21px;
+        color:@color-text;
+    }
+    &__descr-title{
+        line-height:21px;
+        margin-top:15px;
+        margin-bottom:10px;
+        color:@color-text;
     }
     &__image{
         img{
@@ -105,59 +116,59 @@
 
 .advantages{
     &__wrap{
-        padding: 0px 20px;
-        padding-top: 30px;
+        padding: 27px 6.25% 37px 6.25%;
         position: relative;
-    }
-    &__description{
-        &:first-of-type{
-            margin-top:25px;
-        }
-        &:last-of-type{
-            margin-bottom: 25px;
-        }
     }
     &__image{
         width:40px;
-        height: 50px;
+        height: 40px;
         display:inline-block;
         vertical-align: top;
+        fill:@blue-color;
+        margin-right: 10px;
     }
     &__title{
         text-align:left;
         display: inline-block;
         width: 230px;
-        
+        h2{
+            margin:14px 0;
+        }
+        p{
+            line-height:21px;
+            margin-bottom:14px;
+        }
     }
-}
-.advantages__description:nth-of-type(1) .advantages__image{
-    background: url('../img/sprites.png') -104px 5px no-repeat ;
-    }
-.advantages__description:nth-of-type(2) .advantages__image{
-    background: url('../img/sprites.png') -154px 5px no-repeat ; 
-}
-.advantages__description:nth-of-type(3) .advantages__image{
-        background: url('../img/sprites.png') -205px 5px no-repeat ;
 }
 
 .features{
     background:@color-reasons;
     text-align: center;
     &__wrap{
-        padding:0px 20px;
+        padding:0px 6.25%;
     }
     &__item{
-        padding: 15px;
+        padding: 15px 0;
         border-bottom: 1px solid #d6d6d6;
     }
     &__item:last-of-type{
         border-bottom: none;
     }
+    &__title{
+        margin-top:14px;
+        margin-bottom:10px;
+    }
+    &__number{
+        line-height:21px;
+    }
+    &__descr-title{
+        line-height:21px;
+        margin:14px 0;
+    }
 }
-
 .offer{
     &__wrap{
-        padding:0px 20px 45px 20px;
+        padding:0px 6.25% 45px 6.25%;
         text-align: center;
         margin-top:30px;
     }
@@ -175,13 +186,14 @@
         margin-top:40px;
         display:block;
         background: @blue-color;
-        padding:20px 10px;
+        padding:18px 10px;
         text-align: center;
+        .btn();
     }
 }
 
 .map{
     width: 100%;
     height: 350px;
-    background: url('https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=320&height=350&lang=ru_RU&sourceType=constructor') no-repeat;
+    background: url('https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=owLTVsyuF1M94FxGi1W_8FaRu9UHPLpZ&width=600&height=450&lang=ru_RU&sourceType=constructor') 50% no-repeat;
 }
