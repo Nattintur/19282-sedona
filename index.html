@@ -21,10 +21,7 @@
 					<li class="navigation__item"><a class="navigation__link" href="form.html">Гостиницы</a></li>
 				</ul>
 				<a class="menu-close" href="/">
-					<svg class="menu-close__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" 
-						viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-						<polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+					<svg class="menu-close__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 					</svg>
 				</a>
 			</nav>
@@ -36,12 +33,24 @@
 		        		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="137px" height="70.778px" 
 		        		viewBox="0 0 137 70.778" enable-background="new 0 0 137 70.778" xml:space="preserve"><path d="M137,0h-14.173H14.173H0l31.279,35.161l0,0l27.8,31.249c5.182,5.824,13.66,5.824,18.842,0l27.8-31.249l0,0L137,0z"/>
 					</svg>
-					<img class="logo__img" src="img/logo-sedona@1x.png" alt="logo" width="68px" height="55px">
+					<picture>
+						<source media="(min-width: 1200px)" 
+								srcset="img/logo-sedona@1x.png 1x,
+								img/logo-sedona@2x.png 2x,
+								img/logo-sedona@3x.png 3x"> 
+						<source media="(min-width: 768px)" 
+								srcset="img/logo-sedona@1x.png 1x,
+								img/logo-sedona@2x.png 2x,
+								img/logo-sedona@3x.png 3x">
+						<source media="(min-width: 320px)" 
+								srcset="img/logo-sedona@1x.png 1x,
+								img/logo-sedona@2x.png 2x,
+								img/logo-sedona@3x.png 3x">
+						<img class="logo__img" src="img/logo-sedona@1x.png" alt="City of Sedona" width="68" height="56">
+					</picture>
 		    	</a>
 		    	<a class="menu-open" href="/">
-		    		<svg class="menu-open__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-		    			xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" 
-		    			viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+		    		<svg class="menu-open__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
 						<g>
 							<rect width="22.928" height="3.964"/>
 							<rect y="9.009" width="22.928" height="3.964"/>
@@ -59,15 +68,9 @@
 			<!--Карточка города-->
 			<div class="card">
 		  		<div class="card__wrap">
-		    		<!--<img class="card__greeting" src="img/card__greeting.png" alt="Welcome -- to the gargeous --"></img>
-		    		<img class="card__main-logo" src="img/card__main-logo.png" alt="Sedona"></img>
-		    		<img class="card__slogan" src="img/card__slogan.png" alt="Because the Grand Canyon sucks!"></img>-->
-		    		<svg class="card__greeting" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="187.663px" height="44.918px" viewBox="0 0 187.663 44.918" enable-background="new 0 0 187.663 44.918"
-						 xml:space="preserve">
+		    		<svg class="card__greeting" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="187.663px" height="44.918px" viewBox="0 0 187.663 44.918" enable-background="new 0 0 187.663 44.918" xml:space="preserve">
 						<g>
-						<path d="M27.712,0h7.708l-1.21,44.918H19.685L17.71,26.373l-1.975,18.545H1.146L0,0h7.645l0.637,37.152H9.11L13.888,0h7.581
-							l4.905,37.152h0.765L27.712,0z"/>
+						<path d="M27.712,0h7.708l-1.21,44.918H19.685L17.71,26.373l-1.975,18.545H1.146L0,0h7.645l0.637,37.152H9.11L13.888,0h7.581l4.905,37.152h0.765L27.712,0z"/>
 						<path d="M59.563,37.152v7.766H38.667V0h20.896v7.7H46.312v10.844h10.575v7.7H46.312v10.908H59.563z"/>
 						<path d="M80.902,37.152v7.766H62.619V0h7.645v37.152H80.902z"/>
 						<path d="M97.146,28.362l7.708-1.797v13.604c0,2.567-2.166,4.749-4.714,4.749H88.672c-2.612,0-4.714-2.182-4.714-4.749V4.749
@@ -81,8 +84,7 @@
 					</svg>
 					
 					
-					<svg class="card__text-tothedorgeous" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="255.917px" height="28.91px" viewBox="0 0 255.917 28.91" enable-background="new 0 0 255.917 28.91" xml:space="preserve">
+					<svg class="card__text-tothedorgeous" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="255.917px" height="28.91px" viewBox="0 0 255.917 28.91" enable-background="new 0 0 255.917 28.91" xml:space="preserve">
 						<g>
 						<path d="M63.999,14.454l-0.202,0.23c-1.353,1.468-3.023,2.188-4.521,2.217l2.822-4.866c1.814-3.138,0.144-6.104-2.678-6.104
 							c-2.304,0-4.089,0.921-5.816,3.916l-1.468,2.562l-1.227,2.098l-0.154,0.177c-2.159,2.505-4.261,4.491-5.586,4.491
@@ -195,9 +197,7 @@
 						</g>
 					</svg>
 		  		</div>
-		  		<svg class="card__svg-triangle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-		  				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1202px" height="57px" 
-		  				viewBox="0 0 1202 57" enable-background="new 0 0 1202 57" xml:space="preserve">
+		  		<svg class="card__svg-triangle" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1202px" height="57px" viewBox="0 0 1202 57" enable-background="new 0 0 1202 57" xml:space="preserve">
 					<g>
 						<polygon fill="#FFFFFF" points="250,23.71 0,0 0,57 250,57 601,57 250,0 	"/>
 						<polygon fill="#FFFFFF" points="952,23.71 952,0 601,57 952,57 1202,57 1202,0"/>
@@ -233,7 +233,18 @@
 		            </div>
 					<!--Картинка 1 причины-->
 					<div class="reason__image">
-							<img src="img/photo-city@1x.jpg"></img>
+						<picture>
+							<source media="(min-width: 1200px)" 
+								srcset="img/photo-city@1x.jpg 1x,
+								img/photo-city@2x.jpg 2x">
+							<source media="(min-width: 768px)" 
+								srcset="img/photo-city@1x.jpg 1x,
+								img/photo-city@2x.jpg 2x">
+							<source media="(min-width: 320px)" 
+							srcset="img/photo-city@1x.jpg 1x,
+							img/photo-city@2x.jpg 2x">
+							<img src="img/photo-city@1x.jpg" alt="Photo city" width="320" height="256">
+						</picture>
 					</div>
 		        </div>
 
@@ -265,7 +276,7 @@
 						</section>
 						<section class="advantages__description">
 							<svg class="advantages__image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-                            	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="63px" height="75.084px" 
+                            	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="63px" height="75.084px" 
                             	viewBox="0 0 63 75.084" enable-background="new 0 0 63 75.084" xml:space="preserve">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M60.165,22.23h-0.103H35.758c13.603-6.815,14.688-11.115,14.188-13.52c-1.145-3.916-5.605-6.938-9.849-5.341c-5.484,2.063-7.028,10.262-8.513,16.19c-1.894-5.998-3.726-13.649-8.011-17.525c-1.242-1.125-3.049-2.237-5.676-2.003c-3.965,0.352-9.652,5.317-7.344,10.849c2.217,5.313,9.539,8.67,14.354,11.35H3.104h-0.27C1.275,22.23,0,23.506,0,25.065V36.25c0,1.559,1.275,2.834,2.835,2.834h0.27v33.062v2.405v0.532h56.958v-0.532v-2.405V39.084h0.103c1.56,0,2.835-1.275,2.835-2.834V25.065C63,23.506,61.725,22.23,60.165,22.23z M41.766,5.873c2.07-0.306,4.907,1.283,5.175,3.171c0.386,2.723-3.348,5.192-5.008,6.343c-2.484,1.723-4.852,2.611-7.177,4.006C35.628,15.748,37.267,6.539,41.766,5.873zM19.232,15.721c-2.19-1.467-6.444-4.378-6.342-7.678c0.11-3.552,5.655-6.491,8.68-3.839c3.797,3.331,5.625,10.972,7.01,16.357C25.381,19.042,22.35,17.808,19.232,15.721z M25.114,72.147H6.042V39.084h19.072V72.147z M25.114,36.084H3V25.23h22.114V36.084zM35.115,36.084v3v33.062h-7.063V39.084v-3V25.23h7.063V36.084z M57.125,72.147H38.053V39.084h19.072V72.147z M60,36.084H38.053V25.23H60V36.084z"/>
 							</svg>
@@ -306,7 +317,18 @@
 		            </div>
 						<!--Картинка 2 причины-->
 						<div class="reason__image">
-							<img src="img/photo-bridge@1x.jpg"></img>
+							<picture>
+							<source media="(min-width: 1200px)" 
+								srcset="img/photo-bridge@1x.jpg 1x,
+								img/photo-bridge@2x.jpg 2x">
+							<source media="(min-width: 768px)" 
+								srcset="img/photo-bridge@1x.jpg 1x,
+								img/photo-bridge@2x.jpg 2x">
+							<source media="(min-width: 320px)" 
+							srcset="img/photo-bridge@1x.jpg 1x,
+								img/photo-bridge@2x.jpg 2x">
+							<img src="img/photo-bridge@1x.jpg" alt="Photo bridge" width="320" height="256">
+						</picture>
 						</div>  
 				</div>
 
@@ -349,7 +371,7 @@
 
 			<!--Карта-->
 			<div class="map">
-		    	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=100%&height=350&lang=ru_RU&sourceType=constructor"></script>
+		    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-TtMc0Ptg0qY-C9cVs2CgPiGa8rjC-3_&width=100%&height=350&lang=ru_RU&sourceType=constructor"></script>
 			</div>
 		</div>
 		</main>
@@ -388,7 +410,7 @@
 						</svg>
 					</a>
 				</div>
-				<div class="page-footer__item">
+				<div class="page-footer__item page-footer__item--right">
 					<span class="page-footer__dev">Разработано</span>
 					<a class="page-footer__link-copyright" href="http://htmlacademy.ru">
 						<svg class="page-footer__svg-copyright" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 

@@ -28,7 +28,7 @@
             }       
         }
     &__link{
-    color: @color-menu-link;
+    color: @white-color;
     display: block;
     text-align: center;
     font-size: 18px;
@@ -56,10 +56,11 @@
     right: 20px;
     z-index: 99;
     &__img{
-        fill: @color-menu-link;
+        fill: @white-color;
     }
 }
-/*  Стили для планшета  */
+
+
 @media (min-width:@width-tablet-content){
     .navigation{
         padding: 0;
@@ -70,13 +71,13 @@
         &__item{
             width: 20%;
             display: block;
-            background: @main-background;
+            background: @white-color;
             box-shadow: none;
                 -webkit-box-shadow: none;
                 -moz-box-shadow: none;
             &:hover,
             &:active{
-                background: @main-background;
+                background: @white-color;
             }
         }
         &__item:nth-of-type(1){
