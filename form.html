@@ -36,7 +36,7 @@
 		        		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="137px" height="70.778px" 
 		        		viewBox="0 0 137 70.778" enable-background="new 0 0 137 70.778" xml:space="preserve"><path d="M137,0h-14.173H14.173H0l31.279,35.161l0,0l27.8,31.249c5.182,5.824,13.66,5.824,18.842,0l27.8-31.249l0,0L137,0z"/>
 					</svg>
-					<img class="logo__img" src="img/logo-sedona@1x.png" alt="logo" width="68px" height="55px">
+					<img class="logo__img" src="img/logo-sedona@1x.png" alt="logo" width="68" height="55">
 		    	</a>
 		    	<a class="menu-open" href="/">
 		    		<svg class="menu-open__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
@@ -58,8 +58,7 @@
 			<div class="main__wrap">
 				<div class="card">
 			  		<div class="card__wrap">
-			    		<!--<img class="card__main-logo" src="img/card__main-logo.png" alt="Sedona"></img>-->
-			    		<svg class="card__main-logo card__main-logo--min" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
+			    		<svg class="card__main-logo-form" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
 						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="459.755px" height="79.804px" 
 						viewBox="0 0 459.755 79.804" enable-background="new 0 0 459.755 79.804" xml:space="preserve">
 						<g>
@@ -102,15 +101,15 @@
 	                            <div class="person-data__wrap">
 	                            	<div class="person-data__name">
 	                            		<label for="last-name">Фамилия:</label>
-								     	<input type="text" id="last-name" name="last-name" value="Иванов"></input>
+								     	<input type="text" id="last-name" name="last-name" value="Иванов">
 	                            	</div>
 								    <div class="person-data__name">
 								    	<label for="first-name">Имя:</label>
-								     	<input type="text" id="first-name" name="first-name" value="Пётр"></input>
+								     	<input type="text" id="first-name" name="first-name" value="Пётр">
 								    </div>
 								    <div class="person-data__name">
 								    	<label for="patronymic">Отчество:</label>
-								     	<input type="text" id="patronymic" name="patronymic" value="Александрович"></input>
+								     	<input type="text" id="patronymic" name="patronymic" value="Александрович">
 								    </div>    
 	                            </div>
 							</div>
@@ -122,11 +121,11 @@
 								</div>
 								     <ul class="impression__list">
 									    <li class="impression__item">
-	                                        <input type="radio" id="radio-1" name="toggle" checked></input>
+	                                        <input type="radio" id="radio-1" name="toggle" checked>
 	                                        <label for="radio-1">Скорее положительное</label>
 	                                    </li>
 									    <li class="impression__item">
-	                                        <input type="radio" id="radio-2" name="toggle"></input>
+	                                        <input type="radio" id="radio-2" name="toggle">
 	                                        <label for="radio-2">Скорее отрицательное</label>
 	                                    </li>
 								     </ul>
@@ -141,7 +140,7 @@
 	                            	<div class="info-travel__period-travel">
 									    <div class="info-travel__item">
 									    	<label for="date-start">Дата приезда:</label>
-									     	<input type="text" id="date-start" name="date-start" value="4 июля 2015"></input>
+									     	<input type="text" id="date-start" name="date-start" value="4 июля 2015">
 									    </div> 
 									    <div class="quantity">
 										    <label for="quantity-day">Дней пребывания:</label>
@@ -155,7 +154,7 @@
 													</svg>
 											    </a>
 											    <div class="quantity__input">
-											    	<input type="text" id="quantity-day" value="14"><span></span></input>
+											    	<input type="text" id="quantity-day" value="14"><span></span>
 											    </div>
 											    <a class="quantity__button quantity__button--right" href="#">
 												    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
@@ -169,7 +168,7 @@
 									    </div>
 									    <div class="info-travel__item">
 									    	<label for="date-end">Дата отъезда:</label>
-		                                 	<input type="text" id="date-end" name="date-end" value="28 июля 2015" autofocus></input>
+		                                 	<input type="text" id="date-end" name="date-end" value="28 июля 2015" autofocus>
 									    </div>
 									</div>
 	                            </div>
@@ -192,7 +191,7 @@
 												</svg>
 										    </a>
 										    <div class="quantity__input">
-										    	<input type="text" id="number-person" value="2"><span></span></input>
+										    	<input type="text" id="number-person" value="2"><span></span>
 										    </div>
 										    <a class="quantity__button quantity__button--right" href="#">
 										    	<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
@@ -211,41 +210,41 @@
 	                            <div class="data-travel__wrap">
 								     <div class="data-travel__item-person">
 									    <div class="data-travel__number">
-	                                        <label for="number-travel">№</label>
-	                                        <div id="number-travel" name="number">1</div>
+	                                        <label for="number-travel1">№</label>
+	                                        <input id="number-travel1" value="1" readonly>
 									    </div>
 									    <div class="data-travel__person-name">
 									    	<div class="data-travel__last-name">
 										   		<label for="last-name__person1">Фамилия:</label>
-										   		<input type="text" id="last-name__person1" name="last-name" value="Иванов"></input>
+										   		<input type="text" id="last-name__person1" name="last-name" value="Иванов">
 											</div>
 											<div class="data-travel__first-name">
 										   		<label for="first-name__person1">Имя:</label>
-										   		<input type="text" id="first-name__person1" name="first-name" value="Пётр"></input>
+										   		<input type="text" id="first-name__person1" name="first-name" value="Пётр">
 											</div>
 											<div class="data-travel__patronymic">
 										   		<label for="patronymic__person1">Отчество:</label>
-										   		<input type="text" id="patronymic__person1" name="patronymic" value="Александрович"></input>
+										   		<input type="text" id="patronymic__person1" name="patronymic" value="Александрович">
 									    	</div>
 									    </div>
 								     </div>
 								     <div class="data-travel__item-person">
 									    <div class="data-travel__number">
-										   <label for="number-travel">№</label>
-										   <div id="number-travel" name="number">2</div>
+										   <label for="number-travel2">№</label>
+										   <input id="number-travel2" value="2" readonly>
 									    </div>
 									    <div class="data-travel__person-name">
 									    	<div class="data-travel__last-name">
-										   		<label for="last-name__person1">Фамилия:</label>
-										   		<input type="text" id="last-name__person1" name="last-name" value="Иванов"></input>
+										   		<label for="last-name__person2">Фамилия:</label>
+										   		<input type="text" id="last-name__person2" name="last-name" value="Иванов">
 											</div>
 											<div class="data-travel__first-name">
-										   		<label for="first-name__person1">Имя:</label>
-										   		<input type="text" id="first-name__person1" name="first-name" value="Пётр"></input>
+										   		<label for="first-name__person2">Имя:</label>
+										   		<input type="text" id="first-name__person2" name="first-name" value="Пётр">
 											</div>
 											<div class="data-travel__patronymic">
-										   		<label for="patronymic__person1">Отчество:</label>
-										   		<input type="text" id="patronymic__person1" name="patronymic" value="Александрович"></input>
+										   		<label for="patronymic__person2">Отчество:</label>
+										   		<input type="text" id="patronymic__person2" name="patronymic" value="Александрович">
 									    	</div>
 									    </div>
 								     </div>
@@ -259,19 +258,19 @@
 	                            	</div>
 								     <ul class="attraction__list">
 									    <li class="attraction__item">
-	                                        <input type="checkbox" id="checkbox-1" checked></input>
+	                                        <input type="checkbox" id="checkbox-1" checked>
 	                                        <label for="checkbox-1">Мост Дьявола</label>
 	                                    </li>
 									    <li class="attraction__item">
-	                                        <input type="checkbox" id="checkbox-2"></input>
+	                                        <input type="checkbox" id="checkbox-2">
 	                                        <label for="checkbox-2">Слайд-парк</label>
 	                                    </li>
 									    <li class="attraction__item">
-	                                        <input type="checkbox" id="checkbox-3" checked></input>
+	                                        <input type="checkbox" id="checkbox-3" checked>
 	                                        <label for="checkbox-3">Гора-Колокол</label>    
 	                                    </li>
 									    <li class="attraction__item">
-	                                        <input type="checkbox" id="checkbox-4" checked></input>
+	                                        <input type="checkbox" id="checkbox-4" checked>
 	                                        <label for="checkbox-4">Красные скалы</label>
 	                                    </li>
 								     </ul>
@@ -284,8 +283,6 @@
 	                            	<div  class="images__title"> 
 	                                 <h2>Загрузите фотографии:</h2>
 	                                </div>
-	                                <!--<input type="file" name="img" accept="image/*"></input>-->
-
 	                                <a class="images__btn-download">Выбрать фотографии</a>
 	                                <div class="images__drag-photos">Перетащите фотографии сюда</div>
 
@@ -296,7 +293,7 @@
 												 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 											</svg>
 	                                	</a>
-	                                	<img src="img/image1@1x.jpg" width="70px" height="70px"></img>
+	                                	<img src="img/image1@1x.jpg" alt="IMG-689.JPG" width="70" height="70">
 	                                	<p>IMG-689.JPG</p>
 	                                </div>
 
@@ -306,7 +303,7 @@
 												 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 											</svg>
 	                                	</a>
-	                                	<img src="img/image2@1x.jpg" width="70px" height="70px"></img>
+	                                	<img src="img/image2@1x.jpg" alt="IMG-687.JPG" width="70" height="70">
 	                                	<p>IMG-687.JPG</p>
 	                                </div>
 	                                <div class="images-block__item">
@@ -315,7 +312,7 @@
 												 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 											</svg>
 	                                	</a>
-	                                	<img src="img/image3@1x.jpg" width="70px" height="70px"></img>
+	                                	<img src="img/image3@1x.jpg" alt="IMG-688.JPG" width="70" height="70">
 	                                	<p>IMG-688.JPG</p>
 	                                </div>
 	                                <div class="images-block__item">
@@ -324,7 +321,7 @@
 												 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 											</svg>
 	                                	</a>
-	                                	<img src="img/image4@1x.jpg" width="70px" height="70px"></img>
+	                                	<img src="img/image4@1x.jpg" alt="IMG-689.JPG" width="70" height="70">
 	                                	<p>IMG-689.JPG</p>
 	                                </div>
 	                                <div class="images-block__item">
@@ -333,7 +330,7 @@
 												 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 											</svg>
 	                                	</a>
-	                                	<img src="img/image5@1x.jpg" width="70px" height="70px"></img>
+	                                	<img src="img/image5@1x.jpg" alt="IMG-660.JPG" width="70" height="70">
 	                                	<p>IMG-660.JPG</p>
 	                                </div>
 	                                <div class="images-block__item">
@@ -342,7 +339,7 @@
 												 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve"><polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
 											</svg>
 	                                	</a>
-	                                	<img src="img/image6@1x.jpg" width="70px" height="70px"></img>
+	                                	<img src="img/image6@1x.jpg" alt="IMG-691.JPG" width="70" height="70">
 	                                	<p>IMG-691.JPG</p>
 	                                </div>
 	                            </div>
@@ -390,7 +387,7 @@
 						</svg>
 					</a>
 				</div>
-				<div class="page-footer__item">
+				<div class="page-footer__item page-footer__item--right">
 					<span class="page-footer__dev">Разработано</span>
 					<a class="page-footer__link-copyright" href="http://htmlacademy.ru">
 						<svg class="page-footer__svg-copyright" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 

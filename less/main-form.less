@@ -1,37 +1,41 @@
 .card{
-    &__main-logo--min{
+    &__main-logo-form{
+        fill: @white-color;
         width:174px;
         height:30px;
+        margin-bottom: 65px;
+        margin-top: 27px;
     }
 }
 .main-page-header{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid @color-border;
     &__wrap{
         padding: 0 6.25%;
         text-align: center;
     }
     &__title{
-        margin-top: 76px;
+        margin-top: 73px;
         }
     &__descr{
-        margin-top: 35px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: 25px;
     }
 }
 .form-review{
     &__title{
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 35px;
+        margin-top: 18px;
+        margin-bottom: 26px;
         h2{
             .font-title();
         }   
     }
 }
 .person-data{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid @color-border;
     &__wrap{
         padding: 0 6.25%;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -48,23 +52,23 @@
         width: 86%;
         height: 22px;
         padding: 18px 7.2%;
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 16px;
+        margin-top: 5px;
         .font-title();
     }
 }
 .impression{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid @color-border;
     &__wrap{
         padding: 0 6.25%;
         text-align: center;
     }
     &__title{
-        margin-top: 20px;
         margin-bottom: 25px;
+        margin-top: 17px;
     }
     &__list{
-        margin-bottom: 20px;
+        margin-bottom: 24px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;  
@@ -82,7 +86,9 @@
     label{
         .font-title();
         text-transform: initial;
-        display: inline-block;    
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer; 
         &::before{
             display: inline-block;
             content: '';
@@ -134,21 +140,18 @@
     }
 }
 .info-travel{
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 23px;
+    border-bottom: 1px solid @color-border;
+    padding-bottom: 12px;
     &__wrap{
         padding: 0 6.25%;       
     }
     &__title{
         text-align: center;
-        margin-top: 20px;
+        margin-top: 17px;
     }
     &__period-travel{
         display: flex;
         flex-direction: column;
-
-    }
-    &__item{
 
     }
     input[type="text"]{
@@ -156,16 +159,17 @@
         width: 86%;
         height: 22px;
         padding: 18px 7.2%;
+        margin-bottom: 10px;
         .font-title();  
     }
     label{
-        margin-left: 20px;
         display: block;
-        margin-top: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
+        margin-left: 20px;
+        margin-top: 5px;
         .font-text();
     }
-    label::after{
+    label:after{
         content:'*';
         color: red;
     }
@@ -182,6 +186,7 @@
 .quantity{
     width:280px;
     margin:0 auto;
+    margin-bottom: 10px;
     &__control{
         height:58px;
         position:relative;
@@ -243,8 +248,8 @@
         padding:0 6.25%;
     }
     &__title{
-        margin-top:20px;
-        margin-bottom:30px;
+        margin-top: 17px;
+        margin-bottom: 23px;
         text-align:center;
     }
     span{
@@ -258,6 +263,7 @@
     }
     label{
         margin-left:20px;
+        margin-bottom: 8px;
         display:block;
         .font-text();
         text-align:center;
@@ -268,14 +274,17 @@
     }
 }
 .data-travel{
-    border-bottom:1px solid #ccc;
-    padding-bottom:25px;
+    border-bottom:1px solid @color-border;
+    padding-bottom: 17px;
     &__wrap{
         padding:0 6.25%;
     }
     &__item-person{
         display:flex;
-        margin-top:40px;
+        margin-top: 37px;
+        &:last-of-type{
+            margin-top: 21px;
+        }
     }
     &__number{
         label{
@@ -306,14 +315,11 @@
                 box-sizing: border-box;
                 height: 58px;
                 padding: 18px 9.6%;
-                margin-bottom:20px;
+                margin-bottom: 10px;
                 .font-title();
-                &:last-of-type{
-                    margin-bottom:0px;
-                }
             }
     }
-    div[id="number-travel"]{
+    input[id^="number-travel"]{
         padding:18px 25px;
         width:10px;
         height:22px;
@@ -323,14 +329,14 @@
     }
 }
 .attraction{
-    border-bottom:1px solid #ccc;
-    padding-bottom:25px;
+    border-bottom:1px solid @color-border;
+    padding-bottom: 28px;
     &__wrap{
         text-align: center;
         padding:0 6.25%;
     }
     &__title{
-        margin-top:20px;
+        margin-top: 17px;
         margin-bottom:20px;
     }
     &__list{
@@ -340,7 +346,7 @@
     }
     &__item{
         text-align:left;
-        margin-bottom:10px;
+        margin-bottom: 23px;
             &:last-of-type{
                 margin-bottom:0px;
             }
@@ -350,6 +356,8 @@
         label{
             display:inline-block;
             text-transform:initial;
+            vertical-align: middle;
+            cursor: pointer;
             .font-title();          
         }
         label::before{
@@ -437,7 +445,7 @@
     }
     &__title{
         text-align:center;
-        margin:20px 0;
+        margin: 17px 0;
     }
     &__btn-download{
         display:block;
@@ -469,7 +477,7 @@
         padding: 16px 0;
         background: @blue-color;
         top:45px;
-        color:@color-text;
+        color: @white-color;
         font-size: 21px;
         line-height: 26px;
         text-align: center;
@@ -486,7 +494,7 @@
         background:@blue-color;
         text-align:center;
         margin:0 auto;
-        color:@color-text;
+        color: @white-color;
         font-size:21px;
         line-height:26px;
         .btn();
