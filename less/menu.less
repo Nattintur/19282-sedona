@@ -1,6 +1,7 @@
 /*  Навигация   */
 .navigation{
     position: relative;
+    display: none;
     &__list{
         display: flex;
         flex-direction: column;
@@ -35,6 +36,11 @@
     line-height: 40px;
     }
 }
+
+.navigation-show{
+    display: block;
+}
+
 .menu-open{
     display: block;
     width: 23px;
@@ -63,6 +69,7 @@
 
 @media (min-width:@width-tablet-content){
     .navigation{
+        display: block;
         padding: 0;
         &__list{
             flex-direction: row;
